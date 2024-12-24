@@ -78,15 +78,13 @@ export default function ProductInformation({ product }: ProductParams) {
     const handleColorClick = (color: Color) => setSelectedColor(color);
     const sumPrice = product.price + extraCost;
 
-    const hardcodedOffert = product.availableOffert ?? 15; // Hardcoded offert
-    const formattedPrice = formatPrice(sumPrice - (sumPrice * hardcodedOffert / 100));
+    const formattedPrice = formatPrice(sumPrice - (sumPrice * (product.availableOffert ?? 0) / 100));
 
     return <section id="product-information">
         <div className="product-images">
             {
-                // product.availableOffert && <p className="offert">-{product.availableOffert}%</p>
+                product.availableOffert && <p className="offert">-{product.availableOffert}%</p>
             }
-            <p className="offert">-{hardcodedOffert}%</p> {/* Hardcoded offert */}
             <div className="main-image-container">
                 <img
                     // style={{ viewTransitionName: `img_${product.id}` }}
