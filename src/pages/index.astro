@@ -32,15 +32,14 @@ import Snowflake from "@/props/christmas/Snowflake.astro";
 		<NoticePost />
 	</Information>
 
-	<h1 class="separator" id="about"># Descuento temporal</h1>
-
-	<img id="discountImage" src="images/discount.jpg" />
-
 	<h1 class="separator" id="about"># Sobre mí</h1>
 
 	<About paragraph={about.paragraph} transition:animate="slide">
 		<AboutPost />
 	</About>
+
+	<h1 class="separator" id="about"># Descuento temporal</h1>
+	<img id="discountImage" src="images/discount.jpg" />
 </Layout>
 
 <ViewTransitions />
