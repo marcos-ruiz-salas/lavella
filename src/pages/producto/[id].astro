@@ -1,0 +1,36 @@
+---
+export async function getStaticPaths() {
+    return productList.map(({ id }) => {
+        return { params: { id } };
+    });
+}
+
+const { id } = Astro.params;
+const foundElement = productList.find((e) => e.id === id);
+
+import Layout from "@/props/Layout.astro";
+import Products from "@components/Products";
+import productList from "@/data/ProductRepository";
+import ProductInformation from "@components/ProductInformation";
+
+import { ViewTransitions } from "astro:transitions";
+
+import Error from "@components/Error";
+---
+
+<Layout>
+    {
+        foundElement ? (
+            <astro-island>
+                <ProductInformation client:only product={foundElement} />
+            </astro-island>
+        ) : (
+            <Error />
+        )
+    }
+
+    <h1 class="separator"># Más productos similares en catálogo 🍪</h1>
+    <Products excludeId={foundElement?.id} similarTags={foundElement?.tags} />
+</Layout>
+
+<ViewTransitions />

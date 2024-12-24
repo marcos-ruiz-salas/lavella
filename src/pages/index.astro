@@ -1,36 +1,46 @@
 ---
-// Component Imports
-import Counter from '../components/Counter';
-const someProps = {
-	count: 0,
-};
-
-// Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
+
+import Information from "@components/about/Information";
+import About from "@components/about/About";
+import Layout from "@/props/Layout.astro";
+
+import { ViewTransitions } from "astro:transitions";
+
+import {
+	frontmatter as about,
+	Content as AboutPost,
+} from "@/pages/data/AboutContent.md";
+
+import {
+	frontmatter as notice,
+	Content as NoticePost,
+} from "@/pages/data/NoticeContent.md";
+
+import Snowflake from "@/props/christmas/Snowflake.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
-		</main>
-	</body>
-</html>
+<Layout>
+	<Snowflake />
+
+	<Information
+		title={notice.title}
+		slogan={notice.slogan}
+		announcement={notice.announcement}
+		transition:animate="slide"
+	>
+		<NoticePost />
+	</Information>
+
+	<h1 class="separator" id="about"># Descuento temporal</h1>
+
+	<img id="discountImage" src="images/discount.jpg" />
+
+	<h1 class="separator" id="about"># Sobre mí</h1>
+
+	<About paragraph={about.paragraph} transition:animate="slide">
+		<AboutPost />
+	</About>
+</Layout>
+
+<ViewTransitions />

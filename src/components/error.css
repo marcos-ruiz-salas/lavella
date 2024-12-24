@@ -1,0 +1,13 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+
+    font-size: x-large;
+    text-align: center;
+}
+
+.error h1 {
+    color: #a64ac9;
+}

@@ -1,0 +1,44 @@
+---
+import "@/props/layout.css";
+
+import Contact from "@components/social/Contact";
+import Header from "@/props/Header";
+import ChristmasLights from "@/props/christmas/ChristmasLights.astro";
+
+const {
+    title = "Lavella Details",
+    description = "Catálogo digital de objetos hechos a mano.",
+} = Astro.props;
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    </head>
+    <body>
+        <main>
+            <div class="hcontainer">
+                <Header />
+                <div class="divider" style="margin-top: 0;"></div>
+                <ChristmasLights />
+            </div>
+
+            <slot />
+
+            <div class="divider" style="margin-bottom: 0;"></div>
+            <footer>
+                <Contact />
+
+                <p style="margin-bottom: 2rem;">
+                    Todos los derechos reservados · 2024 💜
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>

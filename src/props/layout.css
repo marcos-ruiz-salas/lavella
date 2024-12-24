@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html {
+    font-family:
+        Onest,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Helvetica Neue,
+        Arial,
+        Noto Sans,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        Segoe UI Symbol,
+        "Noto Color Emoji";
+
+    scroll-behavior: smooth;
+}
+
+body {
+    text-wrap: balance;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    background-color: rgb(251, 249, 251);
+}
+
+h1,
+p,
+span {
+    margin: 0
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+}
+
+main>.hcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    margin-bottom: -2rem;
+    position: sticky;
+    z-index: 10;
+}
+
+#discountImage {
+    border-radius: 20px;
+    max-width: 40rem;
+    width: -webkit-fill-available;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    border-color: #b365da;
+    border-width: thick;
+}
+
+main>div>header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+main>div>header>span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main>div>header>a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+
+    main>div>header,
+    main>div>header>span {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+}
+
+main>footer,
+main>div>header {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcf5ff;
+}
+
+main>div>header {
+    display: flex;
+    flex-direction: column;
+}
+
+main>div>header>span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main>div>header>span>a {
+    display: inline-block;
+    font-size: 1.25rem;
+}
+  
+main>div>header>span>a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #b365da;
+    transition: 300ms;
+}
+
+main>div>header>span>a:hover::after {
+    width: 100%;
+}
+
+main>div>header>span>a:hover {
+    color: #b365da;
+    transition: color 300ms ease;
+}
+
+main>div>header>a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+
+    main>div>header,
+    main>div>header>span {
+        flex-direction: row;
+    }
+
+    main>.hcontainer {
+        top: 0;
+    }
+
+    #discountImage {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    border-top: 3px solid #ccc;
+    margin: 1rem 0;
+}
+
+.separator {
+    align-self: flex-start;
+    margin: 2rem;
+    padding: 1rem;
+    border-bottom: 4px solid #ccc;
+    place-self: center;
+
+    max-width: 1200px;
+    width: 90%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    width: 12rem;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    cursor: pointer;
+    margin: 1rem 0;
+}

@@ -1,0 +1,14 @@
+---
+// https://docs.astro.build/basics/astro-components/
+import { ViewTransitions } from "astro:transitions";
+
+import Layout from "@/props/Layout.astro";
+import Products from "@components/Products";
+---
+
+<Layout>
+    <h1 class="separator"># Productos 🎁</h1>
+    <Products />
+</Layout>
+
+<ViewTransitions />
