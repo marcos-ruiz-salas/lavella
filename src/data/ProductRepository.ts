@@ -71,14 +71,14 @@ const PRODUCT_LIST: Product[] = [
         price: 6.70,
         stock: 10,
     },
-    {
+    /*{
         id: "lo7",
         images: ["/images/product/llavero/11.jpeg"],
         tags: ["llaveros", "resina"],
         name: "Llavero con figura de Resina",
         price: 7.70,
         stock: 10,
-    },
+    },*/
     {
         id: "lo6",
         images: ["/images/product/llavero/10.jpeg"],
