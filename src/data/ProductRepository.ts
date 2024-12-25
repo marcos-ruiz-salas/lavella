@@ -357,7 +357,7 @@ const PRODUCT_LIST: Product[] = [
             "/images/product/marco/1.jpeg",
             "/images/product/marco/2.jpg"
         ],
-        tags: ["otros", "marcos"],
+        tags: ["placas", "marcos", "otros"],
         name: "Marcos Metracrilato",
         description: "Añade una silueta de la fotografía que más te guste con esa persona especial. Te llevarás un recuerdo para toda la vida.",
         price: 10.50,
