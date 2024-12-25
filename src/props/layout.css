@@ -20,6 +20,11 @@ html {
         "Noto Color Emoji";
 
     scroll-behavior: smooth;
+    
+    --secondary-color: #fcf5ff;
+    --primary-color: #d9b0ed;
+    --accent-color: #b365da;
+    --hover-color: #8a1fc7;
 }
 
 body {
@@ -55,7 +60,7 @@ main>.hcontainer {
     width: 100%;
     margin-bottom: -2rem;
     position: sticky;
-    z-index: 10;
+    z-index: 100;
 }
 
 #discountImage {
@@ -106,7 +111,7 @@ main>div>header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fcf5ff;
+    background-color: var(--secondary-color);
 }
 
 main>div>header {
@@ -132,7 +137,7 @@ main>div>header>span>a::after {
     width: 0px;
     height: 1px;
     display: block;
-    background: #b365da;
+    background: var(--primary-color);
     transition: 300ms;
 }
 
@@ -141,7 +146,7 @@ main>div>header>span>a:hover::after {
 }
 
 main>div>header>span>a:hover {
-    color: #b365da;
+    color: var(--primary-color);
     transition: color 300ms ease;
 }
 

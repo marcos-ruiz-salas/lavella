@@ -26,7 +26,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #a526e4;
+    border-color: var(--accent-color);
     box-shadow: 0 0 0 2px rgba(165, 38, 228, 0.2);
 }
 
@@ -36,7 +36,7 @@
 }
 
 #contact-form button {
-    background-color: #a526e4;
+    background-color: var(--accent-color);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -47,7 +47,7 @@
 }
 
 #contact-form button:hover {
-    background-color: #8a1fc7;
+    background-color: var(--hover-color);
 }
 
 @media (min-width: 768px) {

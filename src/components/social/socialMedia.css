@@ -4,7 +4,7 @@
     justify-content: center;
 
     border-radius: 50%;
-    background-color: #b365da;
+    background-color: var(--accent-color);
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -16,7 +16,7 @@
 
 .social-icon:hover {
     transform: scale(1.1);
-    background-color: #8a1fc7;
+    background-color: var(--hover-color);
 }
 
 .social-icon:active {

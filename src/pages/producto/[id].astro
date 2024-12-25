@@ -30,7 +30,11 @@ import Error from "@components/Error";
     }
 
     <h1 class="separator"># Más productos similares en catálogo 🍪</h1>
-    <Products excludeId={foundElement?.id} similarTags={foundElement?.tags} />
+    <Products
+        excludeId={foundElement?.id}
+        similarTags={foundElement?.tags}
+        alreadyOpened={true}
+    />
 </Layout>
 
 <ViewTransitions />
