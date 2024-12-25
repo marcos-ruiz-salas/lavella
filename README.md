@@ -1,4 +1,4 @@
-# Astro + React Example
+# Astro + React Example | Lavella
 
 ```sh
 npm create astro@latest -- --template framework-react
