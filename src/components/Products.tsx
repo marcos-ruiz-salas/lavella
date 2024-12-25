@@ -2,7 +2,9 @@ import ProductList from "@components/product/List";
 import ProductItem from "./product/Item";
 import productList from "@/data/ProductRepository";
 
-export default function Products({ excludeId, similarTags }: { excludeId?: string, similarTags?: string[] }) {
+export default function Products(
+    { excludeId, similarTags, alreadyOpened }: { excludeId?: string, similarTags?: string[], alreadyOpened?: boolean }
+) {
     const similarProducts = productList
         .filter(product => product.id !== excludeId)
         .filter(product => !similarTags || product.tags?.some(tag => similarTags.includes(tag)));
@@ -21,25 +23,21 @@ export default function Products({ excludeId, similarTags }: { excludeId?: strin
 
     return uniqueTags.map(tag => {
         return (
-            <>
-                <h1
-                    className="separator"
-                    style={
+            <article className="productsArticle">
+                <details open={alreadyOpened}>
+                    <summary className="separator">
+                        {tag?.toLocaleUpperCase()}
+                    </summary>
+
+                    <ProductList>
                         {
-                            margin: 0,
-                            fontWeight: 'bold',
-                            textAlign: 'center',
+                            similarProducts
+                                .filter(product => product.tags?.[0] === tag)
+                                .map(product => <ProductItem product={product} />)
                         }
-                    }
-                >{tag?.toLocaleUpperCase()}</h1>
-                <ProductList>
-                    {
-                        similarProducts
-                            .filter(product => product.tags?.[0] === tag)
-                            .map(product => <ProductItem product={product} />)
-                    }
-                </ProductList>
-            </>
+                    </ProductList>
+                </details>
+            </article>
         )
     })
 }
