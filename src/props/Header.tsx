@@ -1,7 +1,9 @@
 import Logo from "@/icons/Logo";
-import ShopCar from "@/icons/ShopCar";
+import CartInformation from "@components/cart/CartInformation";
+import { ShopCartProvider } from "@components/cart/ShopCartProvider";
 
 export default function Header() {
+
     return (
         <header>
             <a href="/">
@@ -16,11 +18,9 @@ export default function Header() {
                 <a href="/productos">Productos</a>
                 <a data-scroll href="#contact">Contacto</a>
 
-                <a
-                    href="https://wa.me/c/34654171031"
-                    target="_blank"
-                ><ShopCar /></a>
-
+                <ShopCartProvider>
+                    <CartInformation />
+                </ShopCartProvider>
             </span>
         </header>
     )

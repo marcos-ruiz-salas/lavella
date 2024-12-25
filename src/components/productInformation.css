@@ -116,6 +116,30 @@
     border: 2px solid #a526e4;
 }
 
+.add-to-cart {
+    display: flex;
+    background: var(--secondary-color);
+    align-items: center;
+    
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+
+    border-radius: 20px;
+    place-content: center;
+    font-weight: 500;
+    font-size: larger;
+    width: fit-content;
+    color: var(--primary-color);
+
+    transition: color 500ms ease, background 300ms ease-in-out;
+}
+
+.add-to-cart:hover {
+    background: var(--primary-color);
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     #product-information {
         flex-direction: row;

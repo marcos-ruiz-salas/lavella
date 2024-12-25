@@ -114,6 +114,11 @@ export default function ProductInformation({ product }: ProductParams) {
                 <p>COD: {product.id}</p>
             </h1>
             <p>EUR {formattedPrice}€</p>
+
+            <button className="add-to-cart">
+                Añadir al carrito 🛒
+            </button>
+
             <div>
                 {product.description && <span>
                     {

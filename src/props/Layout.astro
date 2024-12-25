@@ -2,43 +2,33 @@
 import "@/props/layout.css";
 
 import Contact from "@components/social/Contact";
-import Header from "@/props/Header";
 import ChristmasLights from "@/props/christmas/ChristmasLights.astro";
+import { ShopCartProvider } from "@components/cart/ShopCartProvider";
 
-const {
-    title = "Lavella Details",
-    description = "Catálogo digital de objetos hechos a mano.",
-} = Astro.props;
+import Header from "@/props/Header";
+import App from "./App.astro";
+
+const { hasContact = true } = Astro.props;
 ---
 
-<html lang="es">
-    <head>
-        <meta charset="utf-8" />
+<App>
+    <main>
+        <div class="hcontainer">
+            <Header />
 
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="viewport" content="width=device-width" />
+            <div class="divider" style="margin-top: 0;"></div>
+            <ChristmasLights />
+        </div>
 
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    </head>
-    <body>
-        <main>
-            <div class="hcontainer">
-                <Header />
-                <div class="divider" style="margin-top: 0;"></div>
-                <ChristmasLights />
-            </div>
+        <slot />
 
-            <slot />
+        <div class="divider" style="margin-bottom: 0;"></div>
+        <footer>
+            {hasContact && <Contact />}
 
-            <div class="divider" style="margin-bottom: 0;"></div>
-            <footer>
-                <Contact />
-
-                <p style="margin-bottom: 2rem;">
-                    Todos los derechos reservados · 2024 💜
-                </p>
-            </footer>
-        </main>
-    </body>
-</html>
+            <p style="margin-bottom: 2rem;">
+                Todos los derechos reservados · 2024 💜
+            </p>
+        </footer>
+    </main>
+</App>

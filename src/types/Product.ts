@@ -8,7 +8,6 @@ export interface Product {
 
     colors?: Color[];
     description?: string;
-    productionTime?: number;
     availableOffert?: number;
 
     tags?: string[];
@@ -19,4 +18,10 @@ export interface Color {
     name: string;
     hex: string;
     cost?: number;
+}
+
+export interface LocalProduct {
+    id: string;
+    color?: string;
+    quantity: number;
 }

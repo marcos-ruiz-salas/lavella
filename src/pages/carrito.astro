@@ -1,0 +1,13 @@
+---
+import Layout from "@/props/Layout.astro";
+import ShopCart from "@components/cart/ShopCart";
+
+import { ViewTransitions } from "astro:transitions";
+---
+
+<Layout hasContact={false}>
+    <h1 class="separator"># Carrito de la compra 🛒</h1>
+    <ShopCart />
+</Layout>
+
+<ViewTransitions />

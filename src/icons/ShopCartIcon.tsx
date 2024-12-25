@@ -1,5 +1,5 @@
 
-export default function ShopCar() {
+export default function ShopCartIcon() {
     return <svg
         aria-label="Enlace al método de compra."
         viewBox="0 0 32 32"

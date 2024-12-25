@@ -1,0 +1,23 @@
+---
+import { ShopCartProvider } from "@components/cart/ShopCartProvider";
+
+const {
+    title = "Lavella Details",
+    description = "Catálogo digital de objetos hechos a mano.",
+} = Astro.props;
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
