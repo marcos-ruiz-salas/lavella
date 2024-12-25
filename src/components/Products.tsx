@@ -21,8 +21,10 @@ export default function Products({ excludeId, similarTags }: { excludeId?: strin
 
     return uniqueTags.map(tag => {
         return (
-            <>
-                <h1
+            <article>
+                <details>
+                <summary>
+                    <h1
                     className="separator"
                     style={
                         {
@@ -32,6 +34,7 @@ export default function Products({ excludeId, similarTags }: { excludeId?: strin
                         }
                     }
                 >{tag?.toLocaleUpperCase()}</h1>
+                </summary>
                 <ProductList>
                     {
                         similarProducts
@@ -39,7 +42,8 @@ export default function Products({ excludeId, similarTags }: { excludeId?: strin
                             .map(product => <ProductItem product={product} />)
                     }
                 </ProductList>
-            </>
+                </details>
+            </article>
         )
     })
 }
