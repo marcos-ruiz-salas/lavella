@@ -1,6 +1,7 @@
 import ProductList from "@components/product/List";
 import ProductItem from "./product/Item";
 import productList from "@/data/ProductRepository";
+import type { Product } from "@/types/Product";
 
 export default function Products(
     { excludeId, similarTags, alreadyOpened }: { excludeId?: string, similarTags?: string[], alreadyOpened?: boolean }
@@ -8,6 +9,23 @@ export default function Products(
     const similarProducts = productList
         .filter(product => product.id !== excludeId)
         .filter(product => !similarTags || product.tags?.some(tag => similarTags.includes(tag)));
+
+    const unwrappedProducts: Product[] = similarProducts.map(product => {
+        if (!product.showSubtypes) return [product];
+        return product.subtypes?.[0].values?.map((subtype, i) => {
+            return {
+                id: product.id,
+                availableOffert: product.availableOffert,
+                name: `${product.name} | ${subtype.name}`,
+                images: [product.images[i]],
+                stock: product.stock,
+                price: product.price + (subtype.cost ?? 0),
+                tags: product.tags,
+                showSubtypes: false,
+                props: i
+            }
+        }) ?? [];
+    }).flat();
 
     const simpleTags = similarProducts
         .map(product => product.tags?.[0])
@@ -31,7 +49,7 @@ export default function Products(
 
                     <ProductList>
                         {
-                            similarProducts
+                            unwrappedProducts
                                 .filter(product => product.tags?.[0] === tag)
                                 .map(product => <ProductItem product={product} />)
                         }

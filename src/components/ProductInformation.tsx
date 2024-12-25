@@ -1,4 +1,4 @@
-import type { Color, Product } from "@/types/Product"
+import type { Product, SubType } from "@/types/Product"
 
 import "@components/productInformation.css"
 import { useEffect, useState } from "react";
@@ -8,9 +8,8 @@ interface ProductParams {
 }
 
 export default function ProductInformation({ product }: ProductParams) {
-    const [selectedColor, setSelectedColor] = useState<Color | null>(
-        product.colors?.[0] || null
-    );
+    const [selectedSubtypes, setSelectedSubtypes] = useState<Record<string, string>>({});
+    const [selectedSubtypeUrl, setSelectedSubtypeUrl] = useState<number>(0);
 
     useEffect(() => {
         const mainImageContainer = document.querySelector<HTMLDivElement>(".main-image-container");
@@ -57,7 +56,7 @@ export default function ProductInformation({ product }: ProductParams) {
         mainImageContainer.addEventListener("mouseleave", handleMouseLeave);
 
         // Set initial zoomed image background
-        zoomedImage.style.backgroundImage = `url(${mainImages[0].src})`;
+        zoomedImage.style.backgroundImage = `url(${mainImages[selectedSubtypeUrl].src})`;
 
         // Cleanup on unmount
         return () => {
@@ -69,16 +68,52 @@ export default function ProductInformation({ product }: ProductParams) {
         };
     }, [product.images]);
 
-    const extraCost = selectedColor?.cost ?? 0;
+    useEffect(() => product.subtypes?.forEach(({ id, values }) => {
+        setSelectedSubtypes((prevState) => ({
+            ...prevState,
+            [id]: values?.[0]?.id ?? ""
+        }));
+
+        if (!product.showSubtypes) return;
+        const firstSubtype = product.subtypes?.[0];
+        if (!firstSubtype) return;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedParam = urlParams.get("selected");
+
+        const selectedUrl = selectedParam ? parseInt(selectedParam) : 0;
+        const selectedSubtype = firstSubtype.values?.[selectedUrl];
+        if (selectedSubtype) {
+            setSelectedSubtypeUrl(selectedUrl);
+            setSelectedSubtypes((prevState) => ({
+                ...prevState,
+                [firstSubtype.id]: selectedSubtype.id
+            }));
+        }
+    }), []);
+
+    const extraCost = Object.entries(selectedSubtypes).reduce((acc, [subTypeKey, subTypeValue]) => {
+
+        const subtype = product.subtypes?.find(({ id }) => id === subTypeKey);
+        const selectedSubtype = subtype?.values.find(({ id }) => id === subTypeValue);
+
+        return acc + (selectedSubtype?.cost ?? 0);
+    }, 0);
 
     // Formatted price with two decimals and thousands separator
     const formatPrice = (price: number) =>
         price.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-    const handleColorClick = (color: Color) => setSelectedColor(color);
-    const sumPrice = product.price + extraCost;
+    const handleSubtypeClick = (key: string, value: string) =>
+        setSelectedSubtypes((prevState) => ({
+            ...prevState,
+            [key]: value
+        }));
 
-    const formattedPrice = formatPrice(sumPrice - (sumPrice * (product.availableOffert ?? 0) / 100));
+    const computedPrice = product.price + extraCost;
+    const formattedPrice = formatPrice(computedPrice - (computedPrice * (
+        product.availableOffert ?? 0) / 100
+    ));
 
     return <section id="product-information">
         <div className="product-images">
@@ -88,7 +123,7 @@ export default function ProductInformation({ product }: ProductParams) {
             <div className="main-image-container">
                 <img
                     // style={{ viewTransitionName: `img_${product.id}` }}
-                    src={product.images[0]}
+                    src={product.images[selectedSubtypeUrl]}
                     alt={product.name}
                     className="main-image"
                 />
@@ -101,7 +136,7 @@ export default function ProductInformation({ product }: ProductParams) {
                             key={i}
                             src={image}
                             alt={`${product.name} - ${i}`}
-                            className={`thumbnail${i === 0 ? " active" : ""}`}
+                            className={`thumbnail${i === selectedSubtypeUrl ? " active" : ""}`}
                         />
                     )
                 }
@@ -115,38 +150,49 @@ export default function ProductInformation({ product }: ProductParams) {
             </h1>
             <p>EUR {formattedPrice}€</p>
             <div>
-                {product.description && <span>
+                {
+                    product.description && <span>
                     {
                         product.description.split('\n')
                             .map((paragraph, i) =>
                                 paragraph.length === 0
                                     ? <br key={i} />
-                                    : <p key={i}>
+                                    : <p key={i} className="description">
                                         {paragraph}
                                     </p>
                             )
                     }
-                </span>}
+                    </span>
+                }
                 {
-                    product.colors && (
-                        <span>
-                            <p>Colores disponibles:</p>
+                    product.subtypes && (
+                        product.subtypes.map(({ id: key, name, values }, index) => {
+                            return <span key={index}>
 
-                            <ul className="colors">
-                                {
-                                    product.colors.map((color, i) =>
-                                        <li
-                                            key={i}
-                                            title={color.name}
-                                            style={{ backgroundColor: `${color.hex}` }}
-                                            onClick={() => handleColorClick(color)}
+                                <p>
+                                    {name}
+                                </p>
+                                <ul className={`${key} subtype`}>
+                                    {
+                                        values.map((value, j) => {
+                                            const selectedValue = selectedSubtypes[key];
 
-                                            className={color.id === selectedColor?.id ? "selected" : ""}
-                                        />
-                                    )
-                                }
-                            </ul>
-                        </span>
+                                            return <li
+                                                key={j}
+
+                                                title={value.name}
+                                                style={value.hex ? { backgroundColor: value.hex } : undefined}
+
+                                                onClick={() => handleSubtypeClick(key, value.id)}
+                                                className={value.id === selectedValue ? "selected" : ""}>
+
+                                                {value.name}
+                                            </li>
+                                        })
+                                    }
+                                </ul>
+                            </span>
+                        })
                     )
                 }
             </div>

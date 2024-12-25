@@ -17,7 +17,7 @@ export default function ProductItem({ product }: ProductItemParams) {
         <a
             className="product"
             id={product.id}
-            href={`/producto/${product.id}`}
+            href={`/producto/${product.id}${product.props && `?selected=${product.props}`}`}
         >
             <header>
                 <img

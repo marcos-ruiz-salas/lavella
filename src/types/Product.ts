@@ -6,17 +6,26 @@ export interface Product {
     stock: number;
     price: number;
 
-    colors?: Color[];
     description?: string;
-    productionTime?: number;
     availableOffert?: number;
 
+    showSubtypes?: boolean;
+    subtypes?: SubTypeKey[];
     tags?: string[];
+
+    props?: any;
 }
 
-export interface Color {
+
+export interface SubTypeKey {
     id: string;
     name: string;
-    hex: string;
+    values: SubType[];
+}
+
+export interface SubType {
+    id: string;
+    name: string;
+    hex?: string;
     cost?: number;
 }
