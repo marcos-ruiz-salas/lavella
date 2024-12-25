@@ -498,7 +498,7 @@ const PRODUCT_LIST: Product[] = [
         price: 29.50,
         stock: 10,
     },
-    {
+    /*{
         id: "chm0",
         images: [
             "/images/product/bola/0.jpg",
@@ -521,7 +521,7 @@ const PRODUCT_LIST: Product[] = [
         description: "Bola navideña para colgar en el árbol hecha con resina epoxi.",
         price: 12.50,
         stock: 10,
-    },
+    },*/
     {
         id: "bb0",
         images: [
