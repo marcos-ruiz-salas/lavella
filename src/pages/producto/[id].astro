@@ -21,9 +21,7 @@ import Error from "@components/Error";
 <Layout>
     {
         foundElement ? (
-            <astro-island>
-                <ProductInformation client:only product={foundElement} />
-            </astro-island>
+            <ProductInformation client:load product={foundElement} />
         ) : (
             <Error />
         )

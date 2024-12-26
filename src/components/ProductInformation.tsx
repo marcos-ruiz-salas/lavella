@@ -2,12 +2,15 @@ import type { Color, Product } from "@/types/Product"
 
 import "@components/productInformation.css"
 import { useEffect, useState } from "react";
+import { addCartItem, cartItems } from "./cart/CartStore";
 
 interface ProductParams {
     product: Product
 }
 
 export default function ProductInformation({ product }: ProductParams) {
+    const [productQuantity, setProductQuantity] = useState<number>(1);
+
     const [selectedColor, setSelectedColor] = useState<Color | null>(
         product.colors?.[0] || null
     );
@@ -80,6 +83,18 @@ export default function ProductInformation({ product }: ProductParams) {
 
     const formattedPrice = formatPrice(sumPrice - (sumPrice * (product.availableOffert ?? 0) / 100));
 
+    const handleClickQuantityIncrement = () => setProductQuantity(quant => quant + 1);
+    const handleClickQuantityDecrement = () => setProductQuantity(quant => quant - 1);
+    const handleClickOnBuyProduct = () => {
+        const { id: productId } = product;
+
+        addCartItem({
+            id: productId,
+            productId,
+            quantity: productQuantity
+        })
+    };
+
     return <section id="product-information">
         <div className="product-images">
             {
@@ -87,7 +102,6 @@ export default function ProductInformation({ product }: ProductParams) {
             }
             <div className="main-image-container">
                 <img
-                    // style={{ viewTransitionName: `img_${product.id}` }}
                     src={product.images[0]}
                     alt={product.name}
                     className="main-image"
@@ -115,9 +129,41 @@ export default function ProductInformation({ product }: ProductParams) {
             </h1>
             <p>EUR {formattedPrice}€</p>
 
-            <button className="add-to-cart">
-                Añadir al carrito 🛒
-            </button>
+            <section className="cart-section">
+                <span>
+                    <b>Cantidad:</b>
+                    <input
+                        min={1}
+                        type="number"
+                        name="quantity"
+                        value={productQuantity}
+                        readOnly
+                    />
+
+                    <div className="quantity-selectors">
+
+                        <button
+                            type="button"
+                            onClick={handleClickQuantityIncrement}
+                            className="increment-quantity"
+                            aria-label="Añadir"
+                        >&#43;</button>
+
+                        <button
+                            type="button"
+                            onClick={handleClickQuantityDecrement}
+                            className="decrement-quantity"
+                            aria-label="Substraer"
+                            disabled={productQuantity === 1}
+                        >&#8722;</button>
+                    </div>
+                </span>
+
+                <button className="add-to-cart" onClick={handleClickOnBuyProduct}>
+                    Añadir al carrito 🛒
+                </button>
+            </section>
+
 
             <div>
                 {product.description && <span>

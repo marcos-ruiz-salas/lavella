@@ -69,19 +69,19 @@
     margin: 0.5rem 0;
 }
 
-#product-information span > div {
+#product-information>span>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
-#product-information div > span {
+#product-information>div>span {
     width: 100%;
     margin-bottom: 1rem;
 }
 
-#product-information div > span > p {
+#product-information>div>span>p {
     font-weight: bold;
 }
 
@@ -121,11 +121,11 @@
     background: var(--secondary-color);
     align-items: center;
     
-    margin-top: 1rem;
     padding: 1rem 2rem;
 
     border-radius: 20px;
     place-content: center;
+
     font-weight: 500;
     font-size: larger;
     width: fit-content;
@@ -211,4 +211,72 @@
 .thumbnail.active {
     opacity: 1;
     border: 2px solid #a526e4;
+}
+.cart-section {
+    display: flex;
+    flex-direction: column;
+
+    place-content: center;
+    text-align: center;
+}
+
+.cart-section>span {
+    display: flex;
+    margin: 1rem 0;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+}
+
+.cart-section>span>input {
+    margin-left: 1rem;
+    width: 3em;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.cart-section .quantity-selectors {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.cart-section .quantity-selectors>button {
+    --quantity-color: #ccc;
+    --hover-color: #eee;
+
+    width: 2rem;
+    aspect-ratio: 1/1;
+    align-content: center;
+    border-radius: 10px;
+
+    transition: transform 500ms ease-in-out, filter 300ms ease;
+    font-weight: bold;
+
+    color: var(--quantity-color);
+    border: var(--quantity-color) solid 2px;
+    background-color: var(--hover-color);
+}
+
+.cart-section .quantity-selectors>button:hover :not(:disabled) {
+    filter: contrast(1.2);
+    transform: scale(1.05);
+}
+
+.cart-section .quantity-selectors>button:disabled {
+    filter: contrast(0.8);
+    transform: scale(0.9);
+}
+
+.cart-section .quantity-selectors .increment-quantity {
+    --quantity-color: #dd6dff;
+    --hover-color: #f4e5fa;
+}
+
+
+.cart-section .quantity-selectors .decrement-quantity {
+    --quantity-color: #ff8d8d;
+    --hover-color: #ffdfdf;
 }

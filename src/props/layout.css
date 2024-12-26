@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 html {
@@ -127,12 +127,12 @@ main>div>header>span {
     gap: 1rem;
 }
 
-main>div>header>span>a {
+main>div>header .header-item {
     display: inline-block;
     font-size: 1.25rem;
 }
   
-main>div>header>span>a::after {
+main>div>header .header-item::after {
     content: '';
     width: 0px;
     height: 1px;
@@ -141,16 +141,16 @@ main>div>header>span>a::after {
     transition: 300ms;
 }
 
-main>div>header>span>a:hover::after {
+main>div>header .header-item:hover::after {
     width: 100%;
 }
 
-main>div>header>span>a:hover {
+main>div>header .header-item:hover {
     color: var(--primary-color);
     transition: color 300ms ease;
 }
 
-main>div>header>a {
+main>div>header>.header-item {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -209,4 +209,10 @@ main>div>header>a {
 
     cursor: pointer;
     margin: 1rem 0;
+}
+
+.cart-container {
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
 }

@@ -20,8 +20,10 @@ export interface Color {
     cost?: number;
 }
 
-export interface LocalProduct {
+export interface CartProduct {
     id: string;
     color?: string;
+
+    productId: string;
     quantity: number;
 }

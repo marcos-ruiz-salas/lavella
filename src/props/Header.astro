@@ -1,0 +1,16 @@
+---
+import Logo from "@/icons/Logo";
+import CartHeader from "@components/cart/CartHeader";
+---
+
+<header>
+    <a href="/"><Logo style={{ width: "12rem" }} className="main-logo" /></a>
+
+    <span>
+        <a class="header-item" href="/#about" data-scroll>⛄ Sobre mí</a>
+        <a class="header-item" href="/productos">Productos</a>
+        <a class="header-item" href="#contact" data-scroll>Contacto</a>
+
+        <CartHeader className="header-item" client:load />
+    </span>
+</header>
