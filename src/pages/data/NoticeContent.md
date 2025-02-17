@@ -1,5 +1,5 @@
 ---
-title: '🎄 Felices Fiestas'
+title: 'Estamos de inauguración'
 slogan: '¡Cada pieza es irrepetible! 💜'
 announcement: '¡Celebra la magia de la Navidad conmigo! Descubre nuestras ofertas exclusivas y regalos especiales para los que más quieres. 🎅'
 ---
