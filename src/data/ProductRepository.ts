@@ -347,7 +347,7 @@ const PRODUCT_LIST: Product[] = [
         ],
         tags: ["neceseres", "otros"],
         name: "Neceser Personalizado",
-        description: "Neceser con diseño personalizado. Haz volar tu imaginación y juntos crearemos tu neceser perfecto.",
+        description: "Neceser con diseño personalizado. Haz volar tu imaginación y juntos crearemos tu neceser perfecto.\nMaterial:\nYute\nMedidas:\n17x15cm",
         price: 7,
         stock: 10,
     },
