@@ -340,8 +340,10 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "nc0",
         images: [
-            "/images/product/neceser/0.jpeg",
-            "/images/product/neceser/2.jpeg"
+            "/images/productos/neceseres/neceser1.webp",
+            "/images/product/neceseres/neceser2.webp",
+	    "/images/product/neceseres/neceser3.webp",
+	    "/images/product/neceseres/neceser4.webp",
         ],
         tags: ["neceseres", "otros"],
         name: "Neceser Inicial",
