@@ -341,25 +341,13 @@ const PRODUCT_LIST: Product[] = [
         id: "nc0",
         images: [
             "/images/productos/neceseres/neceser1.webp",
-            "/images/product/neceseres/neceser2.webp",
-	    "/images/product/neceseres/neceser3.webp",
-	    "/images/product/neceseres/neceser4.webp",
+            "/images/productos/neceseres/neceser2.webp",
+	    "/images/productos/neceseres/neceser3.webp",
+	    "/images/productos/neceseres/neceser4.webp",
         ],
         tags: ["neceseres", "otros"],
         name: "Neceser Inicial",
         description: "Neceser personalizado con el nombre e inicial de tu elección.",
-        price: 7,
-        stock: 10,
-    },
-    {
-        id: "nc1",
-        images: [
-            "/images/product/neceser/1.jpeg",
-            "/images/product/neceser/2.jpeg"
-        ],
-        tags: ["neceseres", "otros"],
-        name: "Neceser Floral",
-        description: "Neceser personalizado con el nombre, y decorada con la respectiva inicial de motivo floral.",
         price: 7,
         stock: 10,
     },
