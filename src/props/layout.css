@@ -83,8 +83,11 @@ main>div>header {
 main>div>header>span {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    place-content: center;
     align-items: center;
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -98,7 +101,8 @@ main>div>header>a {
 
     main>div>header,
     main>div>header>span {
-        flex-direction: row;
+        padding: 0rem;
+        place-content: unset;
         padding-bottom: 0;
     }
 }
@@ -117,14 +121,6 @@ main>div>header {
 main>div>header {
     display: flex;
     flex-direction: column;
-}
-
-main>div>header>span {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
 }
 
 main>div>header>span>a {
