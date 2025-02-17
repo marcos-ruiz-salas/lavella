@@ -12,7 +12,7 @@ export default function Header() {
             </a>
 
             <span>
-                <a data-scroll href="/#about">⛄ Sobre mí</a>
+                <a data-scroll href="/#about">Sobre mí</a>
                 <a href="/productos">Productos</a>
                 <a data-scroll href="#contact">Contacto</a>
 

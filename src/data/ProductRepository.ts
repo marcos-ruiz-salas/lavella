@@ -58,6 +58,7 @@ const PRODUCT_LIST: Product[] = [
             "/images/productos/llavero-sublimacion-1.webp",
             "/images/productos/llavero-sublimacion-2.webp",
             "/images/productos/llavero-sublimacion-3.webp",
+	    
         ],
         tags: ["llaveros", "resina"],
         name: "Llavero con Fotografía",
@@ -86,7 +87,18 @@ const PRODUCT_LIST: Product[] = [
         name: "Llavero Polipiel",
         description: "Diseño de llavero personalizado con una imagen a elegir, impreso por sublimación.",
         price: 6.90,
-        stock: 1,
+        stock: 0,
+    },
+    {
+        id: "llavero07",
+        images: [
+            "/images/productos/llaveros/Corazon-1.webp",
+        ],
+        tags: ["llaveros"],
+        name: "Llavero Polipiel Corazón",
+        description: "Diseño de llavero personalizado con una imagen a elegir, impreso por sublimación.",
+        price: 6.90,
+        stock: 5,
     },
     {
         id: "huesito01",
