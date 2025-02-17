@@ -230,51 +230,45 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "m0",
         images: [
-            "/images/product/marco/0.jpeg",
-            "/images/product/marco/1.jpeg",
-            "/images/product/marco/2.jpg"
+            "/images/productos/placas/placa01.webp",
+            "/images/productos/placas/placa02.webp",
+            "/images/productos/placas/placa03.webp",
+	    "/images/productos/placas/placa04.webp",
+	    "/images/productos/placas/placa05.webp",
         ],
         tags: ["placas", "marcos", "otros"],
-        name: "Marcos Metracrilato",
-        description: "Añade una silueta de la fotografía que más te guste con esa persona especial. Te llevarás un recuerdo para toda la vida.",
-        price: 10.50,
+        name: "Placa imágen",
+        description: "Descripción:\nAñade una silueta, ilustración o imagen que más te guste.Te llevarás un recuerdo para toda la vida.\n\nMaterial:\nPlaca de acero inoxidable con base de madera.\n\nMedidas:\n18x13cm",
+        price: 16,99,
         stock: 10,
     },
     {
         id: "p0",
         images: [
-            "/images/product/placa/0.jpeg",
-            "/images/product/placa/1.jpeg"
+            "/images/productos/placas/placa01.webp",
+            
         ],
         tags: ["placas", "acero"],
         name: "Placa con diseño Netflix",
-        description: "Placas de acero con el mejor acabado, listas para ser grabadas con momentos inolvidables.\n\n· Toda la información de la tarjeta es personalizable.",
+        description: "Descripción:\nCrea tu mejor serie o película,añade imágenes, frases y momentos únicos.\n\nMaterial:\nPlaca de acero inoxidable con base de madera.\n\nMedidas:\n18x13cm.",
         price: 16.99,
         stock: 10,
     },
     {
         id: "p1",
-        images: ["/images/product/placa/2.jpg"],
+        images: ["/images/productos/placas/placa02.webp"],
         tags: ["placas", "acero"],
         name: "Placa con diseño Spotify",
-        description: "Placas de acero con el mejor acabado, añade tu pista de audio favorita y te generamos su onda de sonido.\n\n· Toda la información de la tarjeta es personalizable.",
-        price: 16.99,
-        stock: 10,
-    },
-    {
-        id: "p2",
-        images: ["/images/product/placa/3.jpg"],
-        tags: ["placas", "acero"],
-        name: "Placa con diseño para Mascotas",
-        description: "Placas de acero con el mejor acabado.\n· Toda la información de la tarjeta es personalizable.",
-        price: 16.99,
+        description: "Descripción:\nAñade vuestra canción favorita, vuestra imagen y aquel mensaje que quieras transmitir. En cualquier momento podréis escuchar la canción seleccionada escaneando el codigo.\n\nMaterial:\nPlaca de acero inoxidable.\n\nMedidas:\n18x13cm",
+        price: 16.99,/Users/andrea/Documents/GitHub/lavella/src/data/ProductRepository.ts
         stock: 10,
     },
     {
         id: "a0",
         images: [
-            "/images/product/alfombrilla/0.jpg",
-            "/images/product/alfombrilla/2.jpg"
+            "/images/productos/placas/placa03.webp",
+            "/images/productos/placas/placa04.webp",
+  	    "/images/productos/placas/placa05.webp",
         ],
         tags: ["alfombrillas de ratón", "otros"],
         name: "Alfombrilla con Logotipo",
