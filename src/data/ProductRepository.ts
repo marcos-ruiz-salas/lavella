@@ -239,7 +239,7 @@ const PRODUCT_LIST: Product[] = [
         tags: ["placas", "marcos", "otros"],
         name: "Placa imágen",
         description: "Descripción:\nAñade una silueta, ilustración o imagen que más te guste.Te llevarás un recuerdo para toda la vida.\n\nMaterial:\nPlaca de acero inoxidable con base de madera.\n\nMedidas:\n18x13cm",
-        price: 16,99,
+        price: 16.99,
         stock: 10,
     },
     {
