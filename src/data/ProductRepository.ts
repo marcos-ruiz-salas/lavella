@@ -260,7 +260,7 @@ const PRODUCT_LIST: Product[] = [
         tags: ["placas", "acero"],
         name: "Placa con diseño Spotify",
         description: "Descripción:\nAñade vuestra canción favorita, vuestra imagen y aquel mensaje que quieras transmitir. En cualquier momento podréis escuchar la canción seleccionada escaneando el codigo.\n\nMaterial:\nPlaca de acero inoxidable.\n\nMedidas:\n18x13cm",
-        price: 16.99,/Users/andrea/Documents/GitHub/lavella/src/data/ProductRepository.ts
+        price: 16.99,
         stock: 10,
     },
     {
