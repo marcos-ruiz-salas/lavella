@@ -231,22 +231,17 @@ const PRODUCT_LIST: Product[] = [
         id: "m0",
         images: [
             "/images/productos/placas/placa01.webp",
-            "/images/productos/placas/placa02.webp",
-            "/images/productos/placas/placa03.webp",
-	    "/images/productos/placas/placa04.webp",
-	    "/images/productos/placas/placa05.webp",
         ],
         tags: ["placas", "marcos", "otros"],
         name: "Placa imágen",
         description: "Descripción:\nAñade una silueta, ilustración o imagen que más te guste.Te llevarás un recuerdo para toda la vida.\n\nMaterial:\nPlaca de acero inoxidable con base de madera.\n\nMedidas:\n18x13cm",
-        price: 16,99,
+        price: 16.99,
         stock: 10,
     },
     {
         id: "p0",
         images: [
-            "/images/productos/placas/placa01.webp",
-            
+            "/images/productos/placas/placa02.webp",
         ],
         tags: ["placas", "acero"],
         name: "Placa con diseño Netflix",
@@ -256,19 +251,21 @@ const PRODUCT_LIST: Product[] = [
     },
     {
         id: "p1",
-        images: ["/images/productos/placas/placa02.webp"],
+        images: [
+            "/images/productos/placas/placa03.webp",
+	    "/images/productos/placas/placa04.webp",
+	    "/images/productos/placas/placa05.webp",
+	],
         tags: ["placas", "acero"],
         name: "Placa con diseño Spotify",
         description: "Descripción:\nAñade vuestra canción favorita, vuestra imagen y aquel mensaje que quieras transmitir. En cualquier momento podréis escuchar la canción seleccionada escaneando el codigo.\n\nMaterial:\nPlaca de acero inoxidable.\n\nMedidas:\n18x13cm",
-        price: 16.99,/Users/andrea/Documents/GitHub/lavella/src/data/ProductRepository.ts
+        price: 16.99,
         stock: 10,
     },
     {
         id: "a0",
         images: [
-            "/images/productos/placas/placa03.webp",
-            "/images/productos/placas/placa04.webp",
-  	    "/images/productos/placas/placa05.webp",
+            "/images/productos/alfombrillas/alfombrilla01.webp",
         ],
         tags: ["alfombrillas de ratón", "otros"],
         name: "Alfombrilla con Logotipo",
