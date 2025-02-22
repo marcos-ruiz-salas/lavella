@@ -96,7 +96,7 @@
 #contact h2 {
     font-family: "Dancing Script", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-    color: #4a005b;
+    color: var(--dark-color);
     font-size: 3rem;
     margin: 0;
 

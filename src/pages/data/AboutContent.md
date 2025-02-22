@@ -6,7 +6,7 @@ paragraph: 'Lavella Details tiene dos esencias de marca: el corazón y la dedica
 <p>
     Muchas veces cuesta coger confianza con una página sin saber quien hay
     detrás...por ello, os dejo este pequeño apartado para que conozcáis un
-    poquito más de mí.<b>¡Hola!/b>
+    poquito más de mí.
 </p>
 <p>
     Lavella Details surgió en 2022, como un proyecto muy pequeñito entre

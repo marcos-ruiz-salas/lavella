@@ -23,7 +23,10 @@ export default function Information({ children, title, slogan, announcement }: I
             <span>
                 <SocialIcons />
 
-                <h1>{title}</h1>
+                <h1>
+                    <p>¡Bienvenidos!</p>
+                    <p>{title}</p>
+                </h1>
 
                 {children}
 

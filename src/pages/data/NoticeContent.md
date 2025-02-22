@@ -1,7 +1,7 @@
 ---
 title: 'Detalles personalizados'
 slogan: '¡Cada pieza es irrepetible! 🤎'
-announcement: 'Descubre '
+announcement: '¡Hacemos realidad tus ideas!'
 ---
 
 <p>
@@ -12,4 +12,3 @@ announcement: 'Descubre '
     Ecuentra ese detalle perfecto que estabas
     buscando o sorprende a alguien con un regalo original y único.
 </p>
-    ¡Hacemos realidad tus ideas!

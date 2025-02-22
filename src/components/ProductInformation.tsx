@@ -1,7 +1,9 @@
-import type { Product, SubType } from "@/types/Product"
+import type { Product } from "@/types/Product"
 
 import "@components/productInformation.css"
 import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
+import ReactMarkdown from 'react-markdown';
 
 interface ProductParams {
     product: Product
@@ -149,25 +151,15 @@ export default function ProductInformation({ product }: ProductParams) {
                 <p>COD: {product.id}</p>
             </h1>
             <p>EUR {formattedPrice}€</p>
-            <div>
+            <div className="cancel">
                 {
-                    product.description && <span>
-                    {
-                        product.description.split('\n')
-                            .map((paragraph, i) =>
-                                paragraph.length === 0
-                                    ? <br key={i} />
-                                    : <p key={i} className="description">
-                                        {paragraph}
-                                    </p>
-                            )
-                    }
-                    </span>
+                    product.description && product.description.split('\n')
+                        .map(paragraph => <Markdown>{paragraph}</Markdown>)
                 }
                 {
                     product.subtypes && (
                         product.subtypes.map(({ id: key, name, values }, index) => {
-                            return <span key={index}>
+                            return <span className="subtypes" key={index}>
 
                                 <p>
                                     {name}

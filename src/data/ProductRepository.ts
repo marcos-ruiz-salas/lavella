@@ -4,9 +4,9 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero01",
         images: [
-            "/images/productos/llavero-inicial-1.webp",
-            "/images/productos/llavero-inicial-0.webp",
-            "/images/productos/llavero-inicial-2.webp",
+            "/images/productos/llaveros/llavero-inicial-1.webp",
+            "/images/productos/llaveros/llavero-inicial-0.webp",
+            "/images/productos/llaveros/llavero-inicial-2.webp",
         ],
         tags: ["llaveros", "resina"],
         name: "Llavero Inicial Personalizado",
@@ -17,8 +17,8 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero02",
         images: [
-            "/images/productos/llavero-forma-0.webp",
-            "/images/productos/llavero-forma-1.webp",
+            "/images/productos/llaveros/llavero-forma-0.webp",
+            "/images/productos/llaveros/llavero-forma-1.webp",
         ],
         tags: ["llaveros", "resina"],
         name: "Llavero Forma",
@@ -39,11 +39,11 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero03",
         images: [
-            "/images/productos/llavero-acrilico-0.webp",
-            "/images/productos/llavero-acrilico-1.webp",
-            "/images/productos/llavero-acrilico-2.webp",
-            "/images/productos/llavero-acrilico-3.webp",
-            "/images/productos/llavero-acrilico-4.webp",
+            "/images/productos/llaveros/llavero-acrilico-0.webp",
+            "/images/productos/llaveros/llavero-acrilico-1.webp",
+            "/images/productos/llaveros/llavero-acrilico-2.webp",
+            "/images/productos/llaveros/llavero-acrilico-3.webp",
+            "/images/productos/llaveros/llavero-acrilico-4.webp",
         ],
         tags: ["llaveros"],
         name: "Llavero Acrílico",
@@ -54,10 +54,10 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero04",
         images: [
-            "/images/productos/llavero-sublimacion-0.webp",
-            "/images/productos/llavero-sublimacion-1.webp",
-            "/images/productos/llavero-sublimacion-2.webp",
-            "/images/productos/llavero-sublimacion-3.webp",
+            "/images/productos/llaveros/llavero-sublimacion-0.webp",
+            "/images/productos/llaveros/llavero-sublimacion-1.webp",
+            "/images/productos/llaveros/llavero-sublimacion-2.webp",
+            "/images/productos/llaveros/llavero-sublimacion-3.webp",
 	    
         ],
         tags: ["llaveros", "resina"],
@@ -69,8 +69,8 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero05",
         images: [
-            "/images/productos/llavero-spotify-0.webp",
-            "/images/productos/llavero-spotify-1.webp",
+            "/images/productos/llaveros/llavero-spotify-0.webp",
+            "/images/productos/llaveros/llavero-spotify-1.webp",
         ],
         tags: ["llaveros"],
         name: "Llavero Spotify",
@@ -81,7 +81,7 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero06",
         images: [
-            "/images/productos/llavero-polipiel-0.webp",
+            "/images/productos/llaveros/llavero-polipiel-0.webp",
         ],
         tags: ["llaveros"],
         name: "Llavero Polipiel",
@@ -92,7 +92,7 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "llavero07",
         images: [
-            "/images/productos/llaveros/Corazon-1.webp",
+            "/images/productos/llaveros/llavero-corazon-0.webp",
         ],
         tags: ["llaveros"],
         name: "Llavero Polipiel Corazón",
@@ -101,12 +101,24 @@ const PRODUCT_LIST: Product[] = [
         stock: 5,
     },
     {
+        id: "llavero08",
+        images: [
+            "/images/productos/llaveros/llavero-abridor-0.webp",
+            "/images/productos/llaveros/llavero-abridor-1.webp",
+        ],
+        tags: ["llaveros"],
+        name: "Llavero Polipiel Abridor",
+        description: "Diseño de llavero abridor de botellas.",
+        price: 6.90,
+        stock: 8,
+    },
+    {
         id: "huesito01",
         images: [
-            "/images/productos/huesito-resina-0.webp",
-            "/images/productos/huesito-resina-1.webp",
-            "/images/productos/huesito-resina-2.webp",
-            "/images/productos/huesito-resina-3.webp",
+            "/images/productos/huesitos/huesito-resina-0.webp",
+            "/images/productos/huesitos/huesito-resina-1.webp",
+            "/images/productos/huesitos/huesito-resina-2.webp",
+            "/images/productos/huesitos/huesito-resina-3.webp",
         ],
         tags: ["huesitos de perro", "resina"],
         name: "Huesito de Resina",
@@ -127,7 +139,7 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "huesito02",
         images: [
-            "/images/productos/huesito-acero-0.webp",
+            "/images/productos/huesitos/huesito-acero-0.webp",
         ],
         tags: ["huesitos de perro", "acero"],
         name: "Huesito de Acero",
@@ -138,10 +150,10 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "marcapaginas01",
         images: [
-            "/images/productos/marcapaginas-resina-1.webp",
-            "/images/productos/marcapaginas-resina-0.webp",
-            "/images/productos/marcapaginas-resina-2.webp",
-            "/images/productos/marcapaginas-resina-3.webp",
+            "/images/productos/marcapaginas/marcapaginas-resina-1.webp",
+            "/images/productos/marcapaginas/marcapaginas-resina-0.webp",
+            "/images/productos/marcapaginas/marcapaginas-resina-2.webp",
+            "/images/productos/marcapaginas/marcapaginas-resina-3.webp",
         ],
         tags: ["marcapáginas", "resina"],
         name: "Marcapáginas de Resina",
@@ -162,9 +174,9 @@ const PRODUCT_LIST: Product[] = [
     {
         id: "marcapaginas02",
         images: [
-            "/images/productos/marcapaginas-sublimacion-0.webp",
-            "/images/productos/marcapaginas-sublimacion-1.webp",
-            "/images/productos/marcapaginas-sublimacion-2.webp",
+            "/images/productos/marcapaginas/marcapaginas-sublimacion-0.webp",
+            "/images/productos/marcapaginas/marcapaginas-sublimacion-1.webp",
+            "/images/productos/marcapaginas/marcapaginas-sublimacion-2.webp",
         ],
         tags: ["marcapáginas"],
         name: "Marcapáginas de Madera",
@@ -176,17 +188,17 @@ const PRODUCT_LIST: Product[] = [
         id: "taza01",
         showSubtypes: true,
         images: [
-            "/images/productos/taza-0.webp",
-            "/images/productos/taza-1.webp",
-            "/images/productos/taza-2.webp",
-            "/images/productos/taza-3.webp",
-            "/images/productos/taza-4.webp",
-            "/images/productos/taza-5.webp",
-            "/images/productos/taza-6.webp",
-            "/images/productos/taza-7.webp",
-            "/images/productos/taza-8.webp",
-            "/images/productos/taza-9.webp",
-            "/images/productos/taza-10.webp",
+            "/images/productos/tazas/taza-0.webp",
+            "/images/productos/tazas/taza-1.webp",
+            "/images/productos/tazas/taza-2.webp",
+            "/images/productos/tazas/taza-3.webp",
+            "/images/productos/tazas/taza-4.webp",
+            "/images/productos/tazas/taza-5.webp",
+            "/images/productos/tazas/taza-6.webp",
+            "/images/productos/tazas/taza-7.webp",
+            "/images/productos/tazas/taza-8.webp",
+            "/images/productos/tazas/taza-9.webp",
+            "/images/productos/tazas/taza-10.webp",
         ],
         tags: ["tazas"],
         name: "Taza",
@@ -226,6 +238,37 @@ const PRODUCT_LIST: Product[] = [
         description: "Taza de cerámica estampada con un diseño a elegir, o bien, crea una personalizada tu mismo siendo asesorado en todo momento.\n· Sin embargo, si unicamente quieres que aparezca una foto que envíes, selecciona la opción correspondiente.",
         price: 9.50,
         stock: 1,
+    },
+    {
+        id: "botella0",
+        images: [
+            "/images/productos/botellas/botella-1.webp",
+        ],
+        tags: ["botellas", "sublimacion"],
+        name: "Botella de Acero inoxidable",
+        description: "Botella de acero personalizable de 650ml.",
+        price: 14.90,
+        stock: 4,
+    },
+    {
+        id: "botella1",
+        images: [
+            "/images/productos/botellas/termo-1.webp",
+        ],
+        tags: ["botellas", "sublimacion"],
+        name: "Termo",
+        description: 
+`¡Dale un toque único a tus bebidas con nuestro vaso termo! Diseñado a tu gusto para mantener la temperatura ideal de tus líquidos por más tiempo, este termo de alta calidad es perfecto para personalizar con el diseño que más te guste.
+        
+## Características:
+- Doble pared de acero inoxidable que conserva la temperatura caliente o fría por horas.
+- Apertura y cierra compatible para pajita, que viene incluida.
+- Capacidad perfecta para café, té, infusiones o bebidas frías.
+- Diseño ergonómico y ligero, ideal para el día a día.
+        
+Ya sea para uso personal o como un regalo especial, este vaso termo sublimable es la opción perfecta para llevar tu estilo a todas partes. **¡Personalízalo y hazlo único!** 🎨✨`,
+        price: 14.90,
+        stock: 4,
     },
     {
         id: "m0",
