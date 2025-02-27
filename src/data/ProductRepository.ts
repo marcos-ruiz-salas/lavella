@@ -3,38 +3,34 @@ import type { Product } from "@/types/Product";
 const PRODUCT_LIST: Product[] = [
     {
         id: "llavero01",
+        showSubtypes: true,
         images: [
+            "/images/productos/llaveros/llavero-forma-0.webp",
+            "/images/productos/llaveros/llavero-forma-1.webp",
             "/images/productos/llaveros/llavero-inicial-1.webp",
             "/images/productos/llaveros/llavero-inicial-0.webp",
             "/images/productos/llaveros/llavero-inicial-2.webp",
         ],
         tags: ["llaveros", "resina"],
-        name: "Llavero Inicial Personalizado",
-        description: "Llavero de resina epoxi con inicial personalizada.\nSe puede cambiar tanto el color como el motivo, además de la inicial deseada.",
-        price: 6.50,
-        stock: 1,
-    },
-    {
-        id: "llavero02",
-        images: [
-            "/images/productos/llaveros/llavero-forma-0.webp",
-            "/images/productos/llaveros/llavero-forma-1.webp",
-        ],
-        tags: ["llaveros", "resina"],
-        name: "Llavero Forma",
-        description: "Llavero de resina epoxi con diseño a elegir entre las formas previamente establecidas.",
+        name: "Llavero de Resina",
+        description:
+`Este llavero de resina epoxi es el complemento perfecto para tus llaves, bolsos o mochilas. Hecho a mano con resina de alta calidad, cada pieza es única, combinando durabilidad con un toque artístico. Su acabado brillante y suave proporciona un aspecto moderno y elegante, mientras que su resistencia lo convierte en un accesorio ideal para el día a día.
+Con una amplia variedad de diseños, colores y texturas, puedes elegir entre opciones que reflejan tu estilo personal o, si lo prefieres, personalizarlo con detalles que lo hagan aún más especial. Perfecto para regalar o para agregar un toque distintivo a tus pertenencias.
+
+**Haz de cada día algo especial con este llavero de resina epoxi, una pieza artesanal que combina belleza y practicidad en un solo accesorio.**`,
         subtypes: [
             {
                 id: "shape",
                 name: "Posibles formas del llavero:",
                 values: [
+                    { id: "inicial", name: "Inicial", cost: 1 },
                     { id: "heart", name: "Corazón" },
                     { id: "butterfly", name: "Mariposa" },
                 ]
             }
         ],
         price: 5.50,
-        stock: 1,
+        stock: 999,
     },
     {
         id: "llavero03",
@@ -80,37 +76,34 @@ const PRODUCT_LIST: Product[] = [
     },
     {
         id: "llavero06",
+        showSubtypes: true,
         images: [
             "/images/productos/llaveros/llavero-polipiel-0.webp",
-        ],
-        tags: ["llaveros", "polipiel"],
-        name: "Llavero Polipiel",
-        description: "Diseño de llavero personalizado con una imagen a elegir, impreso por sublimación.",
-        price: 6.90,
-        stock: 0,
-    },
-    {
-        id: "llavero07",
-        images: [
             "/images/productos/llaveros/llavero-corazon-0.webp",
-        ],
-        tags: ["llaveros", "polipiel"],
-        name: "Llavero Polipiel Corazón",
-        description: "Diseño de llavero personalizado con una imagen a elegir, impreso por sublimación.",
-        price: 6.90,
-        stock: 5,
-    },
-    {
-        id: "llavero08",
-        images: [
+            "/images/productos/llaveros/llavero-redondo-0.webp",
             "/images/productos/llaveros/llavero-abridor-0.webp",
             "/images/productos/llaveros/llavero-abridor-1.webp",
         ],
-        tags: ["llaveros"],
-        name: "Llavero Polipiel Abridor",
-        description: "Diseño de llavero abridor de botellas.",
+        tags: ["llaveros", "polipiel"],
+        name: "Llavero Polipiel",
+        description:
+`Este llavero de polipiel sublimable es el accesorio perfecto para añadir un toque personal a tus llaves, bolsos o mochilas. Hecho con un material de polipiel suave y duradero, este llavero es ideal para personalizar con tus diseños, logos o mensajes especiales mediante sublimación, creando una pieza única que refleja tu estilo.
+
+Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspecto sofisticado, mientras que su ligereza lo convierte en una opción práctica para llevar a diario. Disponible en varias formas y colores.`,
+        subtypes: [
+            {
+                id: "shape",
+                name: "Posibles formas del llavero:",
+                values: [
+                    { id: "basic", name: "Básico" },
+                    { id: "heart", name: "Corazón" },
+                    { id: "round", name: "Redondo" },
+                    { id: "abridor", name: "Abridor" },
+                ]
+            }
+        ],
         price: 6.90,
-        stock: 8,
+        stock: 4,
     },
     {
         id: "huesito01",
@@ -343,22 +336,18 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
     {
         id: "a0",
         images: [
-            "/images/productos/alfombrillas/alfombrilla01.webp",
+            "/images/productos/alfombrilla/alfombrilla01.webp",
+            "/images/productos/alfombrilla/alfombrilla02.webp",
+            "/images/productos/alfombrilla/alfombrilla03.webp",
         ],
-        tags: ["alfombrillas de ratón", "otros"],
-        name: "Alfombrilla con Logotipo",
-        description: "Alfombra para el ratón del ordenador, personalizada con el logotipo de tu compañía.",
+        tags: ["alfombrillas de ratón"],
+        name: "Alfombrilla",
+        description:
+`Esta alfombrilla de ratón sublimable es la forma perfecta de agregar un toque personal y único a tu escritorio. Hecha con material de alta calidad, su superficie es ideal para sublimar con tus diseños, fotos, logotipos o cualquier imagen que desees, creando un accesorio completamente personalizado para tu espacio de trabajo o gaming.
+
+Con una base antideslizante, esta alfombrilla asegura que tu ratón se desplace con precisión y fluidez, proporcionando una experiencia de uso cómoda y eficiente. Ya sea para tu oficina, tu habitación o como un regalo práctico y exclusivo, esta alfombrilla no solo es funcional, sino también un lienzo perfecto para mostrar tu creatividad.`,
         price: 11.50,
-        stock: 10,
-    },
-    {
-        id: "a1",
-        images: ["/images/product/alfombrilla/1.jpg"],
-        tags: ["alfombrillas de ratón", "otros"],
-        name: "Alfombrilla Personalizada",
-        description: "Alfombra para el ratón del ordenador, añade la imagen o el diseño que más te inspire.",
-        price: 11.90,
-        stock: 10,
+        stock: 1,
     },
     {
         id: "pz0",
@@ -542,36 +531,50 @@ Con un imán fuerte en la parte posterior, se adhiere fácilmente a cualquier 
     },
     {
         id: "pack0",
+        showSubtypes: true,
         images: [
-            "/images/product/pack/3.jpg",
-            "/images/product/pack/0.jpeg"
+            "/images/productos/packs/conjunto-n-t-01.webp",
+            "/images/productos/packs/conjunto-t-n-tz-01.webp",
+            "/images/productos/packs/conjunto-mp-ll-01.webp",
+            "/images/productos/packs/conjunto-mp-ll-02.webp",
         ],
-        tags: ["packs", "resina", "otros"],
-        name: "Marcapáginas + Llavero",
-        description: "Ambos personalizables y hechos con resina epoxi.",
-        price: 15,
-        stock: 10,
+        tags: ["packs", "resina", "llaveros", "neceseres", "botellas"],
+        name: "Packs de regalo",
+        subtypes: [
+            {
+                id: "type",
+                name: "Posibles combinaciones de los packs:",
+                values: [
+                    { id: "n-t", name: "Neceser y Bolsa tote", cost: 2.99 },
+                    { id: "t-n-tz", name: "Neceser, Bolsa tote y Taza", cost: 12.49 },
+                    { id: "mp-ll", name: "Marcapáginas y llavero" },
+                ]
+            }
+        ],
+        description: "Haz que cada ocasión especial sea aún más memorable con nuestros Packs de Regalo Personalizados. Diseñados para ofrecer una experiencia única, estos packs incluyen una selección exclusiva de nuestros productos más populares, que puedes elegir según tus preferencias. Ya sea que busques sorprender a alguien con un detalle único o disfrutar de un conjunto de artículos especiales, cada pack puede ser personalizado con un diseño único para hacerlo aún más personal. **¡El regalo perfecto para cualquier celebración!**",
+        price: 14,
+        stock: 999,
     },
     {
         id: "pack1",
         images: [
-            "/images/product/pack/4.jpg",
-            "/images/product/pack/1.jpeg"
+            "/images/productos/cajas/caja0.webp",
+            "/images/productos/cajas/caja1.webp",
+            "/images/productos/cajas/caja2.webp",
+            "/images/productos/cajas/caja3.webp",
+            "/images/productos/cajas/caja4.webp",
         ],
-        tags: ["packs", "otros"],
-        name: "Bolsa tote + Neceser a juego",
-        description: "Ambos personalizables con la inicial y el nombre que eligas.",
-        price: 16,
-        stock: 10,
-    },
-    {
-        id: "pack2",
-        images: ["/images/product/pack/2.jpg"],
-        tags: ["packs", "otros"],
-        name: "Bolsa tote + Neceser a juego + Taza",
-        description: "Personalizables con la inicial y el nombre que eligas.",
-        price: 26.50,
-        stock: 10,
+        tags: ["packs", "resina", "llaveros", "neceseres", "botellas"],
+        name: "Cajas de regalo personalizadas",
+        description:
+`Haz de cada regalo algo único con nuestras Cajas Personalizadas, donde tú eliges los productos que más te gusten de nuestra tienda. Perfectas para cualquier ocasión, estas cajas están diseñadas para adaptarse a tus gustos y necesidades, permitiéndote crear un conjunto exclusivo de artículos seleccionados por ti. Desde accesorios hasta detalles decorativos, ¡tú decides qué llevar dentro! Además, cada caja puede ser personalizada con un diseño especial, nombres o mensajes, convirtiéndola en el regalo ideal para sorprender a tus seres queridos.
+**Características:**
+
+- _Personalización_: Elige entre nuestros productos y arma la caja con los artículos que prefieras. Además, personaliza la caja con un diseño, nombre o mensaje especial.
+- _Variedad_: Escoge entre una amplia gama de productos de nuestra tienda para crear una caja única y exclusiva.
+- _Diseño de la caja_: Ofrecemos varias opciones de diseño y tamaño para que tu caja se adapte a lo que necesitas.`,
+        price: 3.99,
+        stock: 999,
     }
 ]
 
