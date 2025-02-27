@@ -83,7 +83,7 @@ const PRODUCT_LIST: Product[] = [
         images: [
             "/images/productos/llaveros/llavero-polipiel-0.webp",
         ],
-        tags: ["llaveros"],
+        tags: ["llaveros", "polipiel"],
         name: "Llavero Polipiel",
         description: "Diseño de llavero personalizado con una imagen a elegir, impreso por sublimación.",
         price: 6.90,
@@ -94,7 +94,7 @@ const PRODUCT_LIST: Product[] = [
         images: [
             "/images/productos/llaveros/llavero-corazon-0.webp",
         ],
-        tags: ["llaveros"],
+        tags: ["llaveros", "polipiel"],
         name: "Llavero Polipiel Corazón",
         description: "Diseño de llavero personalizado con una imagen a elegir, impreso por sublimación.",
         price: 6.90,
@@ -178,7 +178,7 @@ const PRODUCT_LIST: Product[] = [
             "/images/productos/marcapaginas/marcapaginas-sublimacion-1.webp",
             "/images/productos/marcapaginas/marcapaginas-sublimacion-2.webp",
         ],
-        tags: ["marcapáginas"],
+        tags: ["marcapáginas", "madera"],
         name: "Marcapáginas de Madera",
         description: "Hecho de madera, sublimado por ambas caras con el diseño personalizado.",
         price: 7.50,
@@ -271,7 +271,24 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
         stock: 4,
     },
     {
-        id: "m0",
+        id: "jarra0",
+        images: [
+            "/images/productos/jarras/jarra-0.webp",
+        ],
+        tags: ["jarras", "sublimacion"],
+        name: "Jarra de Cerveza de Cristal",
+        description: 
+`Añade un toque único a tu hogar o evento con una elegante jarra de cristal esmerilado **personalizada**. Hecha con vidrio de alta calidad y un acabado esmerilado suave, esta jarra combina estilo y funcionalidad en una sola pieza. Su superficie mate no solo aporta un aspecto sofisticado, sino que también es ideal para grabar tus nombres o fotografias.\n**Características:**
+
+- Material: Cristal esmerilado de alta calidad.
+- Capacidad: 500 mililitros.
+- Personalización: Graba cualquier diseño, texto o logo que desees.
+- Uso: Perfecta para bebidas frías, jugos, cócteles, o incluso como pieza decorativa.`,
+        price: 15.20,
+        stock: 3,
+    },
+    {
+        id: "p0",
         images: [
             "/images/productos/placas/placa01.webp",
         ],
@@ -282,7 +299,7 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
         stock: 10,
     },
     {
-        id: "p0",
+        id: "p1",
         images: [
             "/images/productos/placas/placa02.webp",
         ],
@@ -293,17 +310,35 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
         stock: 10,
     },
     {
-        id: "p1",
+        id: "p2",
         images: [
             "/images/productos/placas/placa03.webp",
-	    "/images/productos/placas/placa04.webp",
-	    "/images/productos/placas/placa05.webp",
-	],
+            "/images/productos/placas/placa04.webp",
+            "/images/productos/placas/placa05.webp",
+	    ],
         tags: ["placas", "acero"],
         name: "Placa con diseño Spotify",
         description: "Descripción:\nAñade vuestra canción favorita, vuestra imagen y aquel mensaje que quieras transmitir. En cualquier momento podréis escuchar la canción seleccionada escaneando el codigo.\n\nMaterial:\nPlaca de acero inoxidable.\n\nMedidas:\n18x13cm",
         price: 16.99,
         stock: 10,
+    },
+    {
+        id: "m0",
+        images: [
+            "/images/productos/marcos/marco-0.webp",
+	    ],
+        tags: ["placas", "madera"],
+        name: "Marco de madera con diseño de nombre",
+        description: 
+`Celebra los lazos familiares con este hermoso marco de madera. Este marco, ideal para capturar esos momentos especiales, lleva los nombres de mamá, papá, abuelo y abuela grabados con elegancia en la parte superior, creando una pieza única y llena de significado. Hecho de madera de alta calidad, este marco permite personalizarlo con una imagen o mensaje que sea importante para ti y tu familia.
+**Características:**
+
+- _Material_: Madera de alta calidad, duradera y resistente.
+- _Personalización_: Se puede personalizar con un diseño, foto o mensaje adicional mediante sublimación, para que sea aún más especial.
+- _Diseño_: Los nombres de mamá, papá, abuelo y abuela están grabados con detalle en la parte superior, haciendo de este marco una pieza única.
+- _Tamaño_: 15x20 cm`,
+        price: 12.10,
+        stock: 6,
     },
     {
         id: "a0",
@@ -328,139 +363,182 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
     {
         id: "pz0",
         images: [
-            "/images/product/puzzle/2.jpg",
-            "/images/product/puzzle/0.jpeg",
-            "/images/product/puzzle/1.jpeg"
+            "/images/productos/puzzles/puzzle01.webp",
+            "/images/productos/puzzles/puzzle02.webp",
+            "/images/productos/puzzles/puzzle03.webp",
+            "/images/productos/puzzles/puzzle04.webp",
         ],
-        tags: ["otros", "puzzles"],
+        tags: ["puzzles"],
         name: "Puzzle Personalizado",
-        description: "Pasanos una fotografía y generaremos un rompecabezas único con el que pasar el rato.",
-        price: 10.50,
-        stock: 10,
-    },
-    {
-        id: "bt0",
-        images: [
-            "/images/product/bolsa/0.jpg",
-            "/images/product/bolsa/4.jpg"
-        ],
-        tags: ["bolsas tote"],
-        name: "Bolsa tote Inicial",
-        description: "Bolsa de tela personalizada con el nombre e inicial de tu elección.",
-        price: 10.90,
-        stock: 10,
-    },
-    {
-        id: "bt1",
-        images: [
-            "/images/product/bolsa/1.jpg",
-            "/images/product/bolsa/3.jpg"
-        ],
-        tags: ["bolsas tote"],
-        name: "Bolsa tote Floral",
-        description: "Bolsa de tela personalizada con el nombre, y decorada con la respectiva inicial de motivo floral.",
-        price: 10.90,
-        stock: 10,
-    },
-    {
-        id: "bt2",
-        images: ["/images/product/bolsa/2.jpg"],
-        tags: ["bolsas tote"],
-        name: "Bolsa tote Personal",
-        description: "Bolsa de tela personalizada con un diseño creado por tí, asesorado en todo momento.",
-        price: 11.90,
-        stock: 10,
+        description:
+`Este puzzle de **120 piezas** es mucho más que un simple juego, es una forma creativa de personalizar tu tiempo libre. Hecho de material de alta calidad, este puzzle ofrece una superficie ideal para sublimar, permitiéndote plasmar tus fotos, diseños, ilustraciones o mensajes especiales. Ya sea como regalo personalizado o para disfrutar de un desafío único, este puzzle es perfecto para quienes buscan una experiencia de entretenimiento completamente personalizada.
+
+El diseño de 120 piezas es perfecto para personas de todas las edades, brindando una experiencia de armado divertida y gratificante. Además, su acabado resistente asegura que tu creación personalizada se mantenga intacta con el paso del tiempo.`,
+        price: 12.50,
+        stock: 7,
     },
     {
         id: "nc0",
         images: [
             "/images/productos/neceseres/neceser1.webp",
             "/images/productos/neceseres/neceser2.webp",
-	    "/images/productos/neceseres/neceser3.webp",
-	    "/images/productos/neceseres/neceser4.webp",
+            "/images/productos/neceseres/neceser3.webp",
+            "/images/productos/neceseres/neceser4.webp",
         ],
-        tags: ["neceseres", "otros"],
+        tags: ["accesorios rafia", "neceseres"],
         name: "Neceser Personalizado",
-        description:"Descripción:\nNeceser con diseño personalizado. Haz volar tu imaginación y juntos crearemos tu neceser perfecto.\n\nMaterial:\nYute\n\nMedidas:\n17x15cm",
+        description:
+`Este neceser de yute es la opción perfecta para quienes buscan un accesorio funcional y ecológico con un toque de personalización. Hecho de yute resistente, este neceser ofrece un estilo natural y elegante, ideal para organizar tus artículos de belleza, maquillaje, higiene o cualquier otra necesidad cotidiana. Gracias a su material duradero, es ideal para llevarlo a donde sea con confianza.
+
+La superficie sublimable te permite personalizarlo con tus diseños, logos o mensajes favoritos, creando un accesorio único que refleje tu personalidad. Su capacidad y versatilidad lo convierten en una excelente opción tanto para uso personal como para regalar en ocasiones especiales o eventos corporativos.
+**Medidas**: 17x15 cm`,
         price: 7,
+        stock: 10,
+    },
+    {
+        id: "bt0",
+        images: [
+            "/images/productos/tote/tote0.webp",
+        ],
+        tags: ["accesorios rafia", "bolsas tote"],
+        name: "Bolsa Tote Bag",
+        description: 
+`Esta bolsa tote de yute es el accesorio perfecto para quienes buscan una opción ecológica y estilosa para sus actividades diarias. Hecha de yute natural y resistente, esta bolsa no solo es duradera, sino también un lienzo ideal para **personalizar con tus diseños**, logos, frases o ilustraciones mediante sublimación, creando una pieza única que refleja tu personalidad.
+
+Con un amplio espacio de almacenamiento y asas cómodas, esta bolsa tote es perfecta para ir de compras, llevar tus libros, ir al gimnasio o simplemente para cualquier salida diaria. Su aspecto rústico y natural se combina con la posibilidad de personalización, ofreciendo una opción práctica y de moda al mismo tiempo.
+`,
+        price: 9.99,
+        stock: 15,
+    },
+    {
+        id: "mc0",
+        images: [
+            "/images/productos/mochila/mochila1.webp",
+            "/images/productos/mochila/mochila2.webp",
+            "/images/productos/mochila/mochila3.webp",
+        ],
+        tags: ["accesorios rafia", "mochilas", "bolsas tote"],
+        name: "Mochila de asas",
+        description: 
+`Esta mochila de asas de yute es la opción ideal para quienes buscan una combinación de practicidad, sostenibilidad y personalización. Hecha de yute resistente y ecológico, esta mochila es perfecta para llevar tus pertenencias con estilo, ya sea para la escuela, el trabajo, el gimnasio o para un paseo relajado.
+
+Gracias a su superficie sublimable, puedes personalizarla con tus diseños, nombres o logos favoritos, creando una pieza única y exclusiva que refleje tu estilo personal. Las asas resistentes aseguran comodidad en el transporte, mientras que su diseño espacioso permite guardar todo lo que necesitas de manera organizada.`,
+        price: 9.99,
         stock: 10,
     },
     {
         id: "nm0",
         images: [
-            "/images/product/nube/0.jpeg",
-            "/images/product/nube/1.jpeg",
-            "/images/product/nube/3.jpg",
-            "/images/product/nube/2.jpeg",
+            "/images/productos/nube/nube01.webp",
+            "/images/productos/nube/nube02.webp",
+            "/images/productos/nube/nube03.webp",
+            "/images/productos/nube/nube04.webp",
+            "/images/productos/nube/nube05.webp",
         ],
-        tags: ["otros", "resina"],
+        tags: ["nube móvil", "resina"],
         name: "Nube Móvil",
-        description: "Nube hecha de distintas piezas con resina epoxi, personalizada con información del bebé y el color que más te guste.",
-        price: 29.50,
-        stock: 10,
-    },
-    /*{
-        id: "chm0",
-        images: [
-            "/images/product/bola/0.jpg",
-            "/images/product/bola/1.jpg"
-        ],
-        tags: ["otros", "navidad"],
-        name: "Bola navideña",
-        description: "Marco de madera con diseño de bola navideña para colgar en el árbol. Personalizable con una imagen que envíes.",
-        price: 12.50,
-        stock: 10,
-    },
-    {
-        id: "chm1",
-        images: [
-            "/images/product/bola/3.jpeg",
-            "/images/product/bola/2.jpeg",
-        ],
-        tags: ["otros", "navidad"],
-        name: "Bola navideña de Resina",
-        description: "Bola navideña para colgar en el árbol hecha con resina epoxi.",
-        price: 12.50,
-        stock: 10,
-    },*/
-    {
-        id: "bb0",
-        images: [
-            "/images/product/baby/0.jpeg",
-            "/images/product/baby/1.jpeg"
-        ],
-        tags: ["otros"],
-        name: "Chupetero para niño pequeño",
-        description: "Personalizado con su nombre.",
-        price: 9.50,
-        stock: 10,
+        description:
+`Celebra la llegada de un bebé con nuestra Nube Móvil de Resina Epóxi Personalizada. Esta delicada pieza de decoración está hecha a mano con resina epóxi de alta calidad y presenta una nube flotante que lleva grabados los datos de nacimiento del bebé, como el nombre, fecha, hora y peso. Perfecta para colgar en la habitación del bebé, esta nube no solo es un detalle encantador, sino también un recuerdo único y personalizado de ese momento tan especial.
+**Características:**
+
+- _Material_: Resina epóxi de alta calidad, duradera y suave al tacto.
+- _Personalización_: Incluye los datos de nacimiento del bebé (nombre, fecha, hora y peso), creando una pieza única que captura un momento especial.`,
+        price: 29.99,
+        stock: 999,
     },
     {
         id: "l0",
         images: [
-            "/images/product/lampara/4.jpeg",
-            "/images/product/lampara/0.jpeg",
-            "/images/product/lampara/1.jpeg",
+            "/images/productos/lamparas/inicial01.webp",
+            "/images/productos/lamparas/inicial03.webp",
         ],
-        tags: ["lampara", "resina"],
+        tags: ["lámparas de resina", "resina"],
         name: "Lámpara Inicial",
-        description: "Lámpara de resina epoxi con inicial personalizada. Se puede personalizar tanto el color como el motivo, además de añadir cualquier elemento externo proporcionado por usted.",
+        description: 
+`Añade un toque personal y luminoso a cualquier espacio con nuestra Lámpara de Resina Epóxi Personalizada con Inicial. Esta lámpara, hecha a mano con resina epóxi de alta calidad, es una pieza única que puede ser personalizada con la inicial de tu elección. Además de su diseño elegante y moderno, incluye una luz LED en su interior, que ilumina la resina de manera suave y cálida, creando un ambiente acogedor y especial. Puedes personalizarla con los elementos que desees, como colores, detalles o pequeños objetos dentro de la resina, haciéndola perfecta para regalar o para decorar tu hogar.
+
+**Características:**
+- _Material_: Resina epóxi de alta calidad, duradera y resistente.
+- _Personalización_: Se puede personalizar con colores, elementos decorativos o pequeños detalles que desees incorporar dentro de la resina.
+- _Luz_: Luz LED incorporada que ilumina suavemente el diseño, resaltando la belleza de la resina.`,
         price: 45,
-        stock: 10,
+        stock: 999,
     },
     {
         id: "l1",
         images: [
-            "/images/product/lampara/4.jpg",
-            "/images/product/lampara/5.jpg",
-            "/images/product/lampara/2.jpeg",
-            "/images/product/lampara/3.jpeg",
+            "/images/productos/lamparas/nombre01.webp",
+            "/images/productos/lamparas/nombre02.webp",
         ],
-        tags: ["lampara", "resina"],
+        tags: ["lámparas de resina", "resina"],
         name: "Lámpara de Nombre completo",
-        description: "Lámpara de resina epoxi con el nombre completo. Se puede personalizar tanto el color como el motivo, además de añadir cualquier elemento externo proporcionado por usted.",
-        price: 45,
-        stock: 10,
+        description:
+`Añade un toque único y moderno a tu espacio con nuestra Lámpara de Resina Personalizada con Nombre. Esta lámpara está hecha con resina epóxi de alta calidad, donde el nombre que elijas se resalta con un diseño elegante y contemporáneo. El nombre se encuentra perfectamente integrado sobre una base de madera natural, lo que le da un toque cálido y sofisticado. Además, su luz LED incorporada ilumina suavemente la resina, creando una atmósfera acogedora y especial en cualquier habitación.
+
+**Características:**
+- _Material_: Resina epóxi de alta calidad y base de madera natural.
+- _Personalización_: Se puede personalizar con el nombre de tu elección, logrando un diseño único y especial.
+- _Base de madera_: Elegante y resistente, complementa perfectamente la resina y la luz.`,
+        price: 20,
+        stock: 999,
+    },
+    {
+        id: "l2",
+        images: [
+            "/images/productos/lamparas/pareja01.webp",
+            "/images/productos/lamparas/pareja02.webp",
+            "/images/productos/lamparas/pareja03.webp",
+        ],
+        tags: ["lámparas de resina", "resina"],
+        name: "Lámpara de Pareja",
+        description:
+`Haz que tu espacio brille con amor y estilo con nuestra Lámpara de Resina Personalizada. Esta pieza única presenta dos iniciales cuidadosamente moldeadas en resina epóxi, acompañadas de un delicado corazón, todo sobre una base de madera natural. La luz LED integrada ilumina suavemente el diseño, creando una atmósfera acogedora y romántica. Perfecta para regalar en ocasiones especiales como aniversarios, bodas o para añadir un toque personalizado a tu hogar.
+
+**Características:**
+- _Material_: Resina epóxi de alta calidad y base de madera natural.
+_ _Personalización_: Personalizable con dos iniciales y un corazón, creando una pieza única y llena de significado.
+- _Base de madera_: Elegante y robusta, complementa perfectamente el diseño de la lámpara.`,
+        price: 35,
+        stock: 999,
+    },
+    {
+        id: "j0",
+        images: [
+        ],
+        tags: ["joyero", "polipiel"],
+        name: "Joyero polipiel",
+        description:
+`**Características:**
+
+- _Material_: Polipiel de alta calidad, resistente y suave al tacto.
+- _Personalización_: Se puede personalizar mediante sublimación con textos, imágenes o logos de tu elección.
+- _Diseño_: Elegante y compacto, con espacio ideal para organizar anillos, pendientes, collares y otros accesorios.
+- _Cierre_: Seguro y práctico para proteger tus joyas.
+- _Tamaño_: 9.5x9.5 cm
+
+Ideal para: Regalos especiales, bodas, aniversarios, o como un toque personal para tu propia colección de joyas.`,
+        price: 16,
+        stock: 2,
+    },
+    {
+        id: "i0",
+        images: [
+        ],
+        tags: ["imán", "madera"],
+        name: "Imán de Madera",
+        description:
+`Añade un toque único a tu hogar o oficina con nuestro Imán de Madera Sublimable personalizado. Hecho de madera natural de alta calidad, este imán ofrece una superficie perfecta para rellenar con tus diseños, fotos o mensajes especiales mediante sublimación.
+Ideal para crear recuerdos especiales, regalos personalizados o para dar un toque decorativo a cualquier espacio.
+**Características:**
+
+- _Material_: Madera natural de alta calidad, suave y resistente.
+- _Personalización_: Se puede personalizar con cualquier diseño, foto o texto mediante sublimación, logrando colores vivos y detalles nítidos.
+- _Tamaño_: 9x12cm
+
+Con un imán fuerte en la parte posterior, se adhiere fácilmente a cualquier superficie metálica.
+`,
+        price: 5.5,
+        stock: 6,
     },
     {
         id: "pack0",
