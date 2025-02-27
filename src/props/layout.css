@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+:root {
+    --secondary-color: #e8e0d9;
+    --primary-color: #c5b2a1;
+    --accent-color: #c29e7e;
+    --hover-color: #7b6555;
+    --dark-color: #382314;
+}
 
 html {
     font-family:
@@ -19,12 +26,8 @@ html {
         Segoe UI Symbol,
         "Noto Color Emoji";
 
+    overflow-x: hidden;
     scroll-behavior: smooth;
-    
-    --secondary-color: #fcf5ff;
-    --primary-color: #d9b0ed;
-    --accent-color: #b365da;
-    --hover-color: #8a1fc7;
 }
 
 body {
@@ -35,7 +38,7 @@ body {
     box-sizing: border-box;
 
     overflow-x: hidden;
-    background-color: rgb(251, 249, 251);
+    background-color: rgb(251, 250, 249);
 }
 
 h1,
@@ -63,44 +66,31 @@ main>.hcontainer {
     z-index: 100;
 }
 
-#discountImage {
-    border-radius: 20px;
-    max-width: 40rem;
-    width: -webkit-fill-available;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-    border-color: #b365da;
-    border-width: thick;
-}
-
 main>div>header {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
 }
 
-main>div>header>span {
+main>div>header>div>span {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     place-content: center;
     align-items: center;
-    padding: 2rem;
+
     gap: 1rem;
 }
 
 main>div>header>a {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    margin-left: 2.5rem;
 }
 
 @media (min-width: 768px) {
 
-    main>div>header,
-    main>div>header>span {
+    main>div>header>div,
+    main>div>header>div>span {
         padding: 0rem;
         place-content: unset;
         padding-bottom: 0;
@@ -115,20 +105,35 @@ main>div>header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: var(--hover-color);
     background-color: var(--secondary-color);
 }
 
 main>div>header {
-    display: flex;
-    flex-direction: column;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-main>div>header>span>a {
+main>div>header>div {
+    max-width: 1200px;
+    padding: 0 1.5rem;
+    width: 100%;
+
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-bottom: 1rem;
+}
+
+main>div>header>div>span>a {
     display: inline-block;
     font-size: 1.25rem;
 }
   
-main>div>header>span>a::after {
+main>div>header>div>span>a::after {
     content: '';
     width: 0px;
     height: 1px;
@@ -137,35 +142,29 @@ main>div>header>span>a::after {
     transition: 300ms;
 }
 
-main>div>header>span>a:hover::after {
+main>div>header>div>span>a:hover::after {
     width: 100%;
 }
 
-main>div>header>span>a:hover {
-    color: var(--primary-color);
+main>div>header>div>span>a:hover {
+    color: var(--hover-color);
     transition: color 300ms ease;
-}
-
-main>div>header>a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 @media (min-width: 768px) {
 
-    main>div>header,
-    main>div>header>span {
+    main>div>header>div,
+    main>div>header>div>span {
         flex-direction: row;
+        justify-content: end;
+    }
+
+    main>div>header>div {
+        padding-bottom: 0;
     }
 
     main>.hcontainer {
         top: 0;
-    }
-
-    #discountImage {
-        margin-left: 10rem;
-        margin-right: 10rem;
     }
 }
 

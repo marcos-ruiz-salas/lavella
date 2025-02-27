@@ -49,7 +49,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #7b0079;
+    background-color: var(--dark-color);
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -59,7 +59,7 @@
 
 
 .product>header>div.stock {
-    background-color: #af4cad;
+    background-color: var(--hover-color);
 }
 
 .product>footer {
@@ -85,12 +85,12 @@
 
 .product p {
     margin: 0;
-    color: #da6bff;
+    color: var(--hover-color);
     font-size: 1.1rem;
     font-weight: bold;
     align-self: flex-start;
     padding: 0.3rem 0.6rem;
-    background-color: rgba(245, 107, 255, 0.1);
+    background-color: var(--secondary-color);
     border-radius: 4px;
 }
 

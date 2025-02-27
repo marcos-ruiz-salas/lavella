@@ -33,14 +33,14 @@
 
     display: list-item;
     list-style: none;
-    border-bottom: 2px solid #d9b0ed;
+    border-bottom: 2px solid var(--secondary-color);
 
     cursor: pointer;
 }
 
 .productsArticle>details[open]>summary {
-    color: #b365da;
-    border-bottom: 2px solid #b365da;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .productsArticle>details,

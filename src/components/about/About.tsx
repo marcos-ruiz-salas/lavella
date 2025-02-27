@@ -11,7 +11,7 @@ export default function About({ children, paragraph }: AboutParams) {
             <div><img src="images/andrea.webp" /></div>
             <span>
                 <h1>
-                    <header>¡Hola!🪻</header>
+                    <header>¡Hola!🫶</header>
                     <footer>Soy Andrea</footer>
                 </h1>
                 <div className="divider"></div>

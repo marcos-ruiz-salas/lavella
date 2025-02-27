@@ -91,13 +91,13 @@
 
 #about-me header {
     font-size: 3rem;
-    color: #bc75dd;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 #about-me footer {
-    color: #a64ac9;
+    color: var(--accent-color);
     margin-top: auto;
     font-size: 2.2rem;
 }
@@ -110,7 +110,7 @@
 }
 
 #about-me p:last-child {
-    color: #af4cad;
+    color: var(--hover-color);
     align-self: flex-end;
     text-align: right;
     font-weight: 600;
