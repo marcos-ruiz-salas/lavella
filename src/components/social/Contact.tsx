@@ -12,21 +12,21 @@ export default function Contact() {
 
                 <SocialIcons />
 
-                <form id="contact-form" action="mailto:marcosruizsalas@hotmail.com" method="POST" encType="text/plain">
+                <form id="contact-form" action="mailto:lavella_details@gmail.com" method="POST" encType="text/plain">
 
                     <div className="form-group">
                         <label htmlFor="name">Nombre</label>
-                        <input type="text" id="name" name="name" required />
+                        <input type="text" id="name" name="Sujeto" required />
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" name="Correo" required />
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="message">Mensaje</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="Asunto" required></textarea>
                     </div>
 
                     <button type="submit">Enviar Mensaje</button>

@@ -63,7 +63,7 @@
 
 #product-information > span > p {
     font-size: 1.6rem;
-    color: #a526e4;
+    color: var(--hover-color);
     font-weight: normal;
     margin: 0.5rem 0;
 }
@@ -205,5 +205,5 @@
 
 .thumbnail.active {
     opacity: 1;
-    border: 2px solid #a526e4;
+    border: 2px solid var(--primary-color);
 }
