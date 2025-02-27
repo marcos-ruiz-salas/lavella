@@ -3,12 +3,10 @@ import ProductItem from "./product/Item";
 import productList from "@/data/ProductRepository";
 import type { Product } from "@/types/Product";
 
-export default function Products(
-    { excludeId, similarTags, alreadyOpened }: { excludeId?: string, similarTags?: string[], alreadyOpened?: boolean }
-) {
+export default function Products(props: ({ excludeId?: string, similarTags?: string[], alreadyOpened?: boolean }|undefined)) {
     const similarProducts = productList
-        .filter(product => product.id !== excludeId)
-        .filter(product => !similarTags || product.tags?.some(tag => similarTags.includes(tag)));
+        .filter(product => product.id !== props?.excludeId)
+        .filter(product => !props?.similarTags || product.tags?.some(tag => props?.similarTags?.includes(tag)));
 
     const unwrappedProducts: Product[] = similarProducts.map(product => {
         if (!product.showSubtypes) return [product];
@@ -33,8 +31,8 @@ export default function Products(
         .sort((a, b) => {
             if (a === undefined || b === undefined) return 0;
 
-            if (similarTags?.includes(a) && !similarTags?.includes(b)) return -1;
-            if (!similarTags?.includes(a) && similarTags?.includes(b)) return 1;
+            if (props?.similarTags?.includes(a) && !props?.similarTags?.includes(b)) return -1;
+            if (!props?.similarTags?.includes(a) && props?.similarTags?.includes(b)) return 1;
             return 0;
         });
     const uniqueTags = [...new Set(simpleTags)];
@@ -42,7 +40,7 @@ export default function Products(
     return uniqueTags.map(tag => {
         return (
             <article className="productsArticle">
-                <details open={alreadyOpened}>
+                <details open={props?.alreadyOpened}>
                     <summary className="separator">
                         {tag?.toLocaleUpperCase()}
                     </summary>

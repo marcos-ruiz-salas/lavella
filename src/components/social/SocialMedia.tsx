@@ -3,12 +3,10 @@ import '@components/social/socialMedia.css';
 interface SocialMediaParams {
     href: string,
     label: string,
-    icon: string
+    children: JSX.Element | JSX.Element[],
 }
 
-export default function SocialMedia({ href, label, icon }: SocialMediaParams) {
-    const iconClasses = `fab ${icon}`
-
+export default function SocialMedia({ href, label, children }: SocialMediaParams) {
     return (
         <a
             href={href}
@@ -16,7 +14,7 @@ export default function SocialMedia({ href, label, icon }: SocialMediaParams) {
             aria-label={label}
             target='blank'
         >
-            <i className={iconClasses}></i>
+            {children}
         </a>
     )
 }

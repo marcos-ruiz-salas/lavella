@@ -124,6 +124,8 @@ main>div>header>div {
     place-items: center;
     flex-direction: column;
     justify-content: center;
+    
+    padding-bottom: 1rem;
 }
 
 main>div>header>div>span>a {
@@ -155,6 +157,10 @@ main>div>header>div>span>a:hover {
     main>div>header>div>span {
         flex-direction: row;
         justify-content: end;
+    }
+
+    main>div>header>div {
+        padding-bottom: 0;
     }
 
     main>.hcontainer {
