@@ -23,9 +23,9 @@ Con una amplia variedad de diseños, colores y texturas, puedes elegir entre op
                 id: "shape",
                 name: "Posibles formas del llavero:",
                 values: [
-                    { id: "inicial", name: "Inicial", cost: 1 },
-                    { id: "heart", name: "Corazón" },
                     { id: "butterfly", name: "Mariposa" },
+                    { id: "heart", name: "Corazón" },
+                    { id: "inicial", name: "Inicial", cost: 1 },
                 ]
             }
         ],
@@ -43,7 +43,8 @@ Con una amplia variedad de diseños, colores y texturas, puedes elegir entre op
         ],
         tags: ["llaveros"],
         name: "Llavero Acrílico",
-        description: "Llavero de acrílico con vinilo personalizado.",
+        description:
+`Este llavero combina lo mejor de tres materiales para ofrecer un accesorio único: acrílico, vinilo y resina. Su base acrílica es resistente y ligera, mientras que el vinilo de alta calidad le da un toque vibrante y personalizado, permitiendo que lo adaptes con cualquier diseño o mensaje. Para darle un acabado brillante y duradero, está cubierto con resina, creando un efecto 3D que resalta los colores y detalles de tu diseño.`,
         price: 6.50,
         stock: 1,
     },
@@ -115,7 +116,11 @@ Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspe
         ],
         tags: ["huesitos de perro", "resina"],
         name: "Huesito de Resina",
-        description: "Huesito de resina epoxi con nombre personalizado, adorna a tu mascota con este detalle único.\n\n· 🐶 Si se desea añadir cualquier otra información de contacto como un teléfono o un nombre, se cobrará un suplemento adicional de 1,00€.",
+        description: 
+`Este huesito de resina epoxi es el accesorio perfecto para tu **mascota**, combinando durabilidad, estilo y personalización. Hecho a mano con resina epoxi de alta calidad, puedes personalizarlo con el nombre de tu mascota, un diseño especial o un mensaje único, creando un accesorio exclusivo que refleje su personalidad.
+
+Ideal para usar como collar, llavero o incluso como decoración para su espacio, este huesito es resistente y elegante, lo que lo hace cómodo para tu mascota o fácil de llevar como un recordatorio de tu fiel compañero. Además, el acabado brillante de la resina le da un toque elegante y moderno que resalta su diseño personalizado
+**· 🐶 Si se desea añadir cualquier otra información de contacto como un teléfono o un nombre, se cobrará un suplemento adicional de 1,00€.**`,
         subtypes: [
             {
                 id: "size",
@@ -127,7 +132,7 @@ Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspe
             }
         ],
         price: 6.50,
-        stock: 1,
+        stock: 999,
     },
     {
         id: "huesito02",
@@ -136,7 +141,11 @@ Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspe
         ],
         tags: ["huesitos de perro", "acero"],
         name: "Huesito de Acero",
-        description: "Huesito de acero inoxidable con cualquier motivo personalizable, lo mejor para tu mascota.\n\n· 🐶 Si se desea añadir cualquier otra información de contacto como un teléfono o un nombre, se cobrará un suplemento adicional de 1,00€.",
+        description:
+`Este huesito de acero sublimable es el accesorio ideal para tu **mascota**, combinando resistencia, ligereza y la posibilidad de personalización. Fabricado con acero de alta calidad y libre de peso, es perfecto para llevar en el collar de tu mascota o como un detalle decorativo. Su superficie sublimable te permite añadir el nombre de tu mascota, un diseño único o un mensaje especial con colores vibrantes y detalles nítidos.
+
+Gracias a su material resistente y ligero, este huesito es cómodo y duradero, ideal para el uso diario. Además, su acabado metálico aporta un toque de elegancia y modernidad que hará destacar a tu compañero de cuatro patas. Ya sea como regalo personalizado o como un accesorio único, este huesito sublimable es la forma perfecta de mostrar cuánto quieres a tu mascota.
+**· 🐶 Si se desea añadir cualquier otra información de contacto como un teléfono o un nombre, se cobrará un suplemento adicional de 1,00€.**`,
         price: 6.50,
         stock: 1,
     },
@@ -150,7 +159,11 @@ Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspe
         ],
         tags: ["marcapáginas", "resina"],
         name: "Marcapáginas de Resina",
-        description: "Marcapáginas de resina epoxi. Se puede personalizar tanto el color como el motivo.",
+        description:
+`Este marcapáginas de resina epoxi es el accesorio perfecto para acompañar tus libros y marcar tus momentos de lectura de una manera única. Hecho a mano con resina epoxi de alta calidad, cada pieza es exclusiva, presentando detalles vibrantes y un acabado brillante que combina arte y funcionalidad.
+Disponible en una variedad de diseños, colores y formas, puedes elegir el marcapáginas que mejor refleje tu estilo personal o regalarlo como un detalle especial para un amante de los libros. Su durabilidad y resistencia lo hacen ideal para marcar cada página de manera elegante y práctica.
+
+Convierte tu experiencia de lectura en algo aún más especial con este marcapáginas de resina epoxi, **un pequeño detalle que aporta belleza y creatividad a cada libro**.`,
         subtypes: [
             {
                 id: "size",
@@ -173,7 +186,10 @@ Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspe
         ],
         tags: ["marcapáginas", "madera"],
         name: "Marcapáginas de Madera",
-        description: "Hecho de madera, sublimado por ambas caras con el diseño personalizado.",
+        description:
+`Este marcapáginas de madera sublimable es el accesorio perfecto para los amantes de los libros que buscan añadir un toque personalizado a su experiencia de lectura. Hecho de madera de alta calidad, su superficie es ideal para sublimar, permitiéndote plasmar tus diseños, frases o ilustraciones favoritas con colores vibrantes y detalles precisos.
+
+Con un acabado suave y natural, este marcapáginas no solo es funcional, sino que también aporta un toque de elegancia y distinción a cada página que marcas`,
         price: 7.50,
         stock: 1,
     },
@@ -228,7 +244,9 @@ Su elegante acabado de polipiel ofrece una sensación de alta calidad y un aspe
 
             }
         ],
-        description: "Taza de cerámica estampada con un diseño a elegir, o bien, crea una personalizada tu mismo siendo asesorado en todo momento.\n· Sin embargo, si unicamente quieres que aparezca una foto que envíes, selecciona la opción correspondiente.",
+        description: `Nuestras tazas sublimables son la opción perfecta para dar un toque personal a tus momentos de café, té o cualquier bebida favorita. Hechas de cerámica de alta calidad, estas tazas ofrecen una superficie ideal para personalizar con tus diseños, fotos, frases o logotipos, utilizando la técnica de sublimación que garantiza una impresión vibrante y duradera.
+
+Algunas de nuestras tazas también cuentan con detalles en color, ya sea en el interior, el asa o en ambas partes, agregando un toque de estilo extra a tu personalización. Ya sea que quieras un regalo único, un detalle para un evento especial o una forma de expresar tu personalidad, estas tazas ofrecen infinitas posibilidades para hacerlo.`,
         price: 9.50,
         stock: 1,
     },
