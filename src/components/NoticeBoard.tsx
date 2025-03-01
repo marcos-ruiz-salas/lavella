@@ -16,7 +16,7 @@ export default function NoticeBoard({ children }: NoticeBoardParams) {
             if (noticeboardSection) noticeboardSection.style.transform = `translateX(-${index * 100}%)`;
         }
 
-        setInterval(moveNotice, 2000);
+        setInterval(moveNotice, 12000);
     }
     return <section id="noticeboard_container" className="noticeboard_container">{children}</section>
 }
