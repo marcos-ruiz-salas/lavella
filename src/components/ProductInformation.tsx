@@ -3,7 +3,6 @@ import type { Product } from "@/types/Product"
 import "@components/productInformation.css"
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
-import ReactMarkdown from 'react-markdown';
 
 interface ProductParams {
     product: Product

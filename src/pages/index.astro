@@ -14,9 +14,23 @@ import {
 	frontmatter as notice,
 	Content as NoticePost,
 } from "@/pages/data/NoticeContent.md";
+import NoticeBoard from "@components/NoticeBoard";
 ---
 
 <Layout>
+	<NoticeBoard client:only="react">
+		<div id="noticeboard" class="noticeboard">
+			<img
+				src="images/noticeboard_0.webp"
+				alt="Últimas novedades en la tienda."
+			/>
+			<img
+				src="images/noticeboard_1.webp"
+				alt="Últimas novedades en la tienda."
+			/>
+		</div>
+	</NoticeBoard>
+
 	<Information
 		title={notice.title}
 		slogan={notice.slogan}
