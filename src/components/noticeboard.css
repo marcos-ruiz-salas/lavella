@@ -8,6 +8,8 @@
     white-space: nowrap;
     overflow: hidden;
     display: flex;
+    
+    margin-bottom: 0;
 }
 
 .noticeboard {
