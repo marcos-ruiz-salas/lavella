@@ -8,7 +8,7 @@
     white-space: nowrap;
     overflow: hidden;
     display: flex;
-    
+
     margin-bottom: 0;
 }
 
@@ -19,4 +19,5 @@
 .noticeboard img {
     width: 100%;
     flex-shrink: 0;
+    object-fit: cover;
 }
