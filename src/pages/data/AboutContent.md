@@ -4,12 +4,8 @@ paragraph: 'Lavella Details tiene dos esencias de marca: el corazón y la dedica
 
 
 <p>
-    Muchas veces cuesta coger confianza con una página sin saber quien hay
-    detrás...por ello, os dejo este pequeño apartado para que conozcáis un
-    poquito más de mí.
+    Esté proyecto surgió con la finalidad de ofrecer productos personalizados que cuenten historias, emocionen y acompañen en el resto de vivencias y momentos. Cada artículo que ofrecemos está diseñado con amor y cuidado, para que puedas sorprender a tus seres queridos con algo realmente único y memorable. Desde cumpleaños hasta bodas, celebraciones o momentos cotidianos..Nuestro objetivo es ayudarte a expresar tus sentimientos a través de detalles personalizados que hablen por tí
 </p>
 <p>
-    Lavella Details surgió en 2022, como un proyecto muy pequeñito entre
-    manos pero, que poco a poco, con mucho esfuerzo e ilusión fue saliendo
-    hacia delante creciendo cada vez más y más.
+    Nos apasiona lo que hacemos, y nos orgullece saber que nos elegís para formar parte de vuestros momentos más especiales. 
 </p>
