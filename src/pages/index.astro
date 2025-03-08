@@ -14,9 +14,23 @@ import {
 	frontmatter as notice,
 	Content as NoticePost,
 } from "@/pages/data/NoticeContent.md";
+import NoticeBoard from "@components/NoticeBoard";
 ---
 
 <Layout>
+	<NoticeBoard>
+		<div id="noticeboard" class="noticeboard">
+			<img
+				src="images/noticeboard_0.webp"
+				alt="Últimas novedades en la tienda."
+			/>
+			<img
+				src="images/noticeboard_1.webp"
+				alt="Últimas novedades en la tienda."
+			/>
+		</div>
+	</NoticeBoard>
+
 	<Information
 		title={notice.title}
 		slogan={notice.slogan}
@@ -31,6 +45,23 @@ import {
 	<About paragraph={about.paragraph} transition:animate="slide">
 		<AboutPost />
 	</About>
+
+	<script is:inline>
+		const noticeboardSection = document.getElementById("noticeboard");
+
+		let index = 0;
+		if (noticeboardSection) {
+			const images = noticeboardSection?.children ?? [];
+
+			function moveNotice() {
+				index = (index + 1) % images.length;
+				if (noticeboardSection)
+					noticeboardSection.style.transform = `translateX(-${index * 100}%)`;
+			}
+
+			setInterval(moveNotice, 8000);
+		}
+	</script>
 </Layout>
 
 <ViewTransitions />
