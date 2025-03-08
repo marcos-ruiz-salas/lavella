@@ -510,7 +510,7 @@ _ _Personalización_: Personalizable con dos iniciales y un corazón, creando 
     },
     {
         id: "j0",
-        images: [
+        images: ["/images/productos/joyeros/joyero0.webp",
         ],
         tags: ["joyero", "polipiel"],
         name: "Joyero polipiel",
