@@ -281,7 +281,7 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
         price: 14.90,
         stock: 4,
     },
-    {
+    /*{
         id: "jarra0",
         images: [
             "/images/productos/jarras/jarra-0.webp",
@@ -296,8 +296,8 @@ Ya sea para uso personal o como un regalo especial, este vaso termo sublimable e
 - Personalización: Graba cualquier diseño, texto o logo que desees.
 - Uso: Perfecta para bebidas frías, jugos, cócteles, o incluso como pieza decorativa.`,
         price: 15.20,
-        stock: 3,
-    },
+        stock: 0,
+    },*/
     {
         id: "p0",
         images: [
@@ -480,13 +480,14 @@ Gracias a su superficie sublimable, puedes personalizarla con tus diseños, nom
         tags: ["lámparas de resina", "resina"],
         name: "Lámpara de Nombre completo",
         description:
-`Añade un toque único y moderno a tu espacio con nuestra Lámpara de Resina Personalizada con Nombre. Esta lámpara está hecha con resina epóxi de alta calidad, donde el nombre que elijas se resalta con un diseño elegante y contemporáneo. El nombre se encuentra perfectamente integrado sobre una base de madera natural, lo que le da un toque cálido y sofisticado. Además, su luz LED incorporada ilumina suavemente la resina, creando una atmósfera acogedora y especial en cualquier habitación.
+`El precio varía en función de los caracteres que contenga el nombre elegido.
+Añade un toque único y moderno a tu espacio con nuestra Lámpara de Resina Personalizada con Nombre. Esta lámpara está hecha con resina epóxi de alta calidad, donde el nombre que elijas se resalta con un diseño elegante y contemporáneo. El nombre se encuentra perfectamente integrado sobre una base de madera natural, lo que le da un toque cálido y sofisticado. Además, su luz LED incorporada ilumina suavemente la resina, creando una atmósfera acogedora y especial en cualquier habitación.
 
 **Características:**
 - _Material_: Resina epóxi de alta calidad y base de madera natural.
 - _Personalización_: Se puede personalizar con el nombre de tu elección, logrando un diseño único y especial.
 - _Base de madera_: Elegante y resistente, complementa perfectamente la resina y la luz.`,
-        price: 20,
+        price: 50,
         stock: 999,
     },
     {
